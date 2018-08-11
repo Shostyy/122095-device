@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Николай Петров](https://up.htmlacademy.ru/htmlcss/22/user/122095).
-* Наставник: `Виктория Коваленко`(https://htmlacademy.ru/profile/id42638).
+* Наставник: [Виктория Коваленко](https://htmlacademy.ru/profile/id42638).
 
 ---
 
