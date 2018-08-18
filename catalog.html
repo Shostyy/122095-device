@@ -10,30 +10,14 @@
 
   <header class="main-header">
 
-    <span class="logo">Device</span>
-    <span class="search">Поиск по сайту</span>
-
-    <nav>
-
-      <ul class="user-navigation">
-        <li class="user-link">
-          <a href="#">Валентин Петухов</a>
-        </li>
-        <li>
-          <a href="#">Выйти</a>
-        </li>
-      </ul>
-
-      <ul class="product-navigation">
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
+    <nav class="main-navigation">
 
       <ul class="site-navigation">
+
+        <li>
+          <img class="site-logo" src="#" alt="Логотип сайта Device">
+        </li>
+
         <li>
           <a href="#">Каталог товаров</a>
 
@@ -70,7 +54,24 @@
         </li>
       </ul>
 
+      <ul class="user-navigation">
+        <li>
+          <a href="#">Войти</a>
+        </li>
+      </ul>
+
+      <ul class="product-navigation">
+        <li>
+          <a href="#">Сравнить</a>
+        </li>
+        <li>
+          <a href="#">Корзина</a>
+        </li>
+      </ul>
+
     </nav>
+
+    <span class="search">Поиск по сайту</span>
 
   </header>
 
@@ -104,10 +105,10 @@
       </ul>
 
       <ul class="sort-direction">
-        <li class="sort-direction-ascending">
+        <li class="sort-ascending">
           <a href="#">По возрастанию</a>
         </li>
-        <li class="sort-direction-descending">
+        <li class="sort-descending">
           <a href="#">По убыванию</a>
         </li>
       </ul>
@@ -121,11 +122,11 @@
       <ul class="catalog-list">
 
         <li>
-          <a href="#">
-            <h3>
+          <h3>
+            <a href="#">
               Любительская селфи-палка
-            </h3>
-          </a>
+            </a>
+          </h3>
           <img src="#" alt="Любительская селфи-палка">
 
           <div class="catalog-item-hover">
@@ -143,11 +144,11 @@
         </li>
 
         <li>
-          <a href="#">
-            <h3>
+          <h3>
+            <a href="#">
               Профессиональная селфи-палка
-            </h3>
-          </a>
+            </a>
+          </h3>
           <img src="#" alt="Профессиональная селфи-палка">
 
           <div class="catalog-item-hover">
@@ -165,11 +166,11 @@
         </li>
 
         <li>
-          <a href="#">
-            <h3>
+          <h3>
+            <a href="#">
               Непотопляемая селфи-палка
-            </h3>
-          </a>
+            </a>
+          </h3>
           <img src="#" alt="Непотопляемая селфи-палка">
 
           <div class="catalog-item-hover">
@@ -187,11 +188,11 @@
         </li>
 
         <li>
-          <a href="#">
-            <h3>
+          <h3>
+            <a href="#">
               Селфи-палка "Следую за мной"
-            </h3>
-          </a>
+            </a>
+          </h3>
           <img src="#" alt="Селфи-палка 'Следую за мной'">
 
           <div class="catalog-item-hover">
@@ -211,6 +212,8 @@
       </ul>
     </section>
 
+    <!-- можно ли "назад" и "вперед" вставлять в этот список,
+       или нужен отдельный -->
     <ul class="pagination-list">
       <li><a href="#">Назад</a></li>
       <li class="current-page">1</li>
