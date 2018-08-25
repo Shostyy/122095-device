@@ -71,7 +71,11 @@
 
     </nav>
 
-    <span class="search">Поиск по сайту</span>
+    <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+      <label class="visually-hidden" for="search-field">Поиск</label>
+      <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+      <button type="submit">Найти</button>
+    </form>
 
   </header>
 
@@ -97,7 +101,31 @@
 
         <fieldset>
           <legend>Стоимость</legend>
-          <!-- Надо подумать как реализовать -->
+          <!-- Пока что не знаю как это реализовать. А еще надо подумать про 
+            доступность, может потом обвешать какими-то area атрибутами.
+            В общем сложно, оставлю эти размышления до js раздела этого
+            интенсива. -->
+
+          <!-- Контейнер для всего кастомного слайдера -->
+          <div class="range-container">
+
+            <!-- Вся выделенная для слайдера линия -->
+            <div class="filter-slider">
+
+              <!-- Выбранная часть слайдера -->
+              <div class="slider-range"></div>
+
+              <button class="btn-range bth-range-left" type="button">Минимальная
+                цена
+              </button>
+              <button class="btn-range btn-range-right" type="button">Максимальная
+                цена
+              </button>
+
+            </div>
+
+          </div>
+
         </fieldset>
 
         <fieldset>
