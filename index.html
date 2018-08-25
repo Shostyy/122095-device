@@ -71,7 +71,11 @@
 
     </nav>
 
-    <span class="search">Поиск по сайту</span>
+    <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+      <label class="visually-hidden" for="search-field">Поиск</label>
+      <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+      <button type="submit">Найти</button>
+    </form>
 
   </header>
 
@@ -82,14 +86,14 @@
     <div class="slider">
       <ul class="slider-list">
 
-        <li>
-          <span>01</span>
+        <li aria-label="Первый слайд">
+          <span class="slider-number">01</span>
           <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка">
           <b>Делаем селфи, как Бен Стиллер!</b>
           <p>Самая длинная палка для селфи доступна в нашем магазине Восемь
             (Восемь, Карл!) метров длиной и весом всего 5 килограмм
           </p>
-          <a class="button">Подробнее</a>
+          <a href="#" class="btn">Подробнее</a>
 
           <table>
             <tr>
@@ -106,14 +110,14 @@
 
         </li>
 
-        <li>
-          <span>02</span>
+        <li aria-label="Второй слайд">
+          <span class="slider-number">02</span>
           <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
           <b>Худеем правильно!</b>
           <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не
             пропускать занятия и соблюдать диету.
           </p>
-          <a class="button">Подробнее</a>
+          <a href="#" class="btn">Подробнее</a>
 
           <table>
             <tr>
@@ -126,14 +130,14 @@
 
         </li>
 
-        <li>
-          <span>03</span>
+        <li aria-label="Третий слайд">
+          <span class="slider-number">03</span>
           <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
           <b>Порхает как бабочка, жалит как пчела!</b>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
             лазером, замаскированным под стандартную камеру.
           </p>
-          <a class="button">Подробнее</a>
+          <a href="#" class="btn">Подробнее</a>
 
           <table>
             <tr>
@@ -149,11 +153,24 @@
         </li>
 
       </ul>
+
+      <ul class="slider-switch-list">
+        <li aria-label="Переключение на первый слайд">
+          <button class="btn" type="button"></button>
+        </li>
+        <li aria-label="Переключение на второй слайд">
+          <button class="btn" type="button"></button>
+        </li>
+        <li aria-label="Переключение на третий слайд">
+          <button class="btn" type="button"></button>
+        </li>
+      </ul>
+
     </div>
 
     <section class="products">
 
-      <h2 class="visually-hidden">Popular products</h2>
+      <h2 class="visually-hidden">Популярные продукты</h2>
 
       <ul class="products-list">
         <li>
@@ -184,13 +201,13 @@
 
       <ul class="services-list">
         <li>
-          <button class="btn btn-active">Доставка</button>
+          <button class="btn btn-active" type="button">Доставка</button>
         </li>
         <li>
-          <button class="bth">Гарантия</button>
+          <button class="bth" type="button">Гарантия</button>
         </li>
         <li>
-          <button class="bth">Кредит</button>
+          <button class="bth" type="button">Кредит</button>
         </li>
       </ul>
 
@@ -267,7 +284,7 @@
         </li>
       </ul>
 
-      <a href="#" class="button">Подробнее о нас</a>
+      <a href="#" class="btn">Подробнее о нас</a>
 
     </section>
 
@@ -279,7 +296,7 @@
       <a href="#">
         <img src="img/map.png" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
       </a>
-      <a class="button">Напишите нам</a>
+      <a class="btn">Напишите нам</a>
 
     </section>
 
@@ -351,15 +368,40 @@
   </footer>
 
   <section class="modal modal-feedback">
+
     <h2>Форма обратной связи</h2>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+
+    <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru">
+
+      <p class="feadback-item">
+        <label for="name-field">Ваше имя:</label>
+        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+      </p>
+
+      <p class="feadback-item">
+        <label for="email-field">Ваш e-mail:</label>
+        <input type="email" name="email" id="email-field" placeholder="email@example.com">
+      </p>
+
+      <p class="feadback-item">
+        <label for="letter-field">Текст письма:</label>
+        <textarea name="letter" id="letter-field" placeholder="В свободной форме"></textarea>
+      </p>
+
+      <button class="btn" type="submit">Отправить</button>
+
+    </form>
+
+    <button class="modal-close" type="button">Закрыть окно</button>
+
   </section>
 
   <section class="modal modal-map">
+
     <h2 class="visually-hidden">Карта с местоположением офиса</h2>
     <img src="img/map-big.png" width="960" height="559" alt="Карта офиса по адресу улица Строителей, 15">
-    <span class="modal-close">x</span>
+    <button class="modal-close" type="button">Закрыть окно</button>
+
   </section>
 
 </body>
