@@ -25,3 +25,74 @@
   font-weight: 400;
   font-style: normal; 
 }
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  color: #000000;
+
+  background-color: #f7e296;
+}
+
+.main-header ul {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.user-navigation,
+.product-navigation {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.search-form {
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.search-form input {
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: transparent;
+}
+
+.search-form input:-ms-input-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-form input::placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.search-button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+
+  border: 2px solid #000000;
+  background-color: transparent;
+}
