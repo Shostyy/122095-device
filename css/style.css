@@ -160,5 +160,19 @@ a {
 }
 
 
+/* main */
 /* products */
+
+.products-list {
+  list-style: none;
+}
+
+.product-icon {
+  background-color: #f7e296;
+}
+
+.products-list a {
+  color: #000000;
+}
+
 
