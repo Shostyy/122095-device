@@ -43,6 +43,23 @@ a {
   text-decoration: none;
 }
 
+.btn {
+  font: inherit;
+
+  text-align: center;
+  color: #000000;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #f0c52e;
+  border: none;
+  border-top: 1px solid #f4d361;
+  border-bottom: 1px solid #f4d361;
+}
+
+
+/* header */
+
 .main-header {
   color: #000000;
 
@@ -96,3 +113,52 @@ a {
   border: 2px solid #000000;
   background-color: transparent;
 }
+
+
+/* main */
+/* slider */
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-number {
+  font-size: 179px;
+  line-height: 179px;
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.slider-slogan {
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.slider-description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.slider-item-feature th {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  color: #464646;
+}
+
+.slider-item-feature td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.slider-switch-list {
+  list-style: none;
+}
+
+
+/* products */
+
