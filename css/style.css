@@ -73,6 +73,13 @@ a {
   color: #000000;
 }
 
+.dropdown a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+}
+
 .user-navigation,
 .product-navigation {
   font-family: "Open Sans", Arial, sans-serif;
