@@ -472,3 +472,50 @@ a.footer-user-exit {
   list-style: none;
 }
 
+
+/* main */
+/* catalog */
+
+.catalog-list {
+  list-style: none;
+}
+
+.product-name a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.product-new {
+  text-transform: uppercase;
+  
+  border: 2px solid;
+  opacity: 0.2;
+}
+
+.popup-buttons-list {
+  list-style: none;
+}
+
+.btn-compare {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.5);
+
+  background-color: transparent;
+  border: none;
+}
+
+.product-cost {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  color: #464646;
+}
+
