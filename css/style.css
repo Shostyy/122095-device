@@ -264,3 +264,47 @@ a {
   font-weight: 300;
   color: #464646;
 }
+
+
+/* footer */
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+.main-footer p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.footer-user-navigation,
+.footer-site-navigation {
+  list-style: none;
+}
+
+.footer-user-navigation a,
+.footer-site-navigation a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-services,
+.footer-socials {
+  list-style: none;
+}
+
+.footer-services a,
+.footer-socials a {
+  color: #ffffff;
+}
+
+.footer-socials {
+  opacity: 0.3;
+}
