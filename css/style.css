@@ -438,9 +438,37 @@ a.footer-user-exit {
   font-weight: 300;
 }
 
-/* main */
-/* sorting */
 
-.sorting {
+/* main */
+/* sort */
+
+.sort {
   background-color: #eeeeee;
 }
+
+.sort h2 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.sort-keywords-list {
+  list-style: none;
+}
+
+.sort-keywords-item a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-current a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sort-direction-list {
+  list-style: none;
+}
+

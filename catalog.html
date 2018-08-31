@@ -109,22 +109,22 @@
         <fieldset class="filter-price">
           <legend>Стоимость</legend>
 
-            <div class="range-whole">
+          <div class="range-whole">
 
-              <div class="range-selected"></div>
+            <div class="range-selected"></div>
 
-              <button class="btn-range bth-range-left" type="button">Минимальная
-                цена
-              </button>
-              <button class="btn-range btn-range-right" type="button">Максимальная
-                цена
-              </button>
-              <p>
-                <span>от 0</span>
-                <span>до 5000</span>
-              </p>
+            <button class="btn-range bth-range-left" type="button">Минимальная
+              цена
+            </button>
+            <button class="btn-range btn-range-right" type="button">Максимальная
+              цена
+            </button>
+            <p>
+              <span>от 0</span>
+              <span>до 5000</span>
+            </p>
 
-            </div>
+          </div>
 
         </fieldset>
 
@@ -172,12 +172,12 @@
             <input type="radio" name="bluetooth" id="bluetooth-on" checked>
             <label for="bluetooth-on">Есть</label>
           </p>
-          
+
           <p>
             <input type="radio" name="bluetooth" id="bluetooth-off">
             <label for="bluetooth-off">Нет</label>
           </p>
-      
+
         </fieldset>
 
         <button class="btn" type="submit">Показать</button>
@@ -186,23 +186,36 @@
 
     </section>
 
-    <section class="sorting">
+    <section class="sort">
 
       <h2>Сортировка:</h2>
 
-      <ul class="sorting-keywords">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По популярности</a></li>
+      <ul class="sort-keywords-list">
+
+        <li class="sort-keywords-item sort-current">
+          <a href="#">По цене</a>
+        </li>
+
+        <li class="sort-keywords-item">
+          <a href="#">По типу</a>
+        </li>
+
+        <li class="sort-keywords-item">
+          <a href="#">По популярности</a>
+        </li>
+
       </ul>
 
-      <ul class="sort-direction">
-        <li class="sort-ascending">
+      <ul class="sort-direction-list">
+
+        <li class="sort-asc">
           <a href="#">По возрастанию</a>
         </li>
-        <li class="sort-descending">
+
+        <li class="sort-desc">
           <a href="#">По убыванию</a>
         </li>
+
       </ul>
 
     </section>
