@@ -48,12 +48,21 @@ a {
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);      
 
   background-color: #f0c52e;
   border: none;
   border-top: 1px solid #f4d361;
   border-bottom: 1px solid #f4d361;
+}
+
+.btn:hover,
+.btn:focus {
+  border: none;
+}
+
+.btn:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -83,7 +92,7 @@ a {
 }
 
 .site-navigation a:hover,
-.site-navigation a:active {
+.site-navigation a:focus {
   color: rgba(0, 0, 0, 0.6);  
 }
 
@@ -238,14 +247,33 @@ a.user-exit {
   list-style: none;
 }
 
+.product-icon:hover {
+  background-color: #f0c52e;
+}
+
+.products-list h3 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 1);  
+}
+
+.product-item a:active h3 {
+  color: rgba(0, 0, 0, 0.3);  
+}
+
 .product-icon {
   background-color: #f7e296;
 }
 
-.products-list a {
-  color: #000000;
+.product-item a:hover .product-icon,
+.product-item a:focus .product-icon {
+  background-color: #f0c52e;
 }
 
+.product-item a:active .product-icon {
+  background-color: #f0c52e;
+}
 
 /* main */
 /* services */
@@ -268,6 +296,7 @@ a.user-exit {
 .services h3 {
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
 }
 
 .services-description {
