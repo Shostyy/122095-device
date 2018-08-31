@@ -45,11 +45,10 @@ a {
 
 .btn {
   font: inherit;
-
   text-align: center;
-  color: #000000;
-  vertical-align: middle;
   text-transform: uppercase;
+  vertical-align: middle;
+  color: #000000;
 
   background-color: #f0c52e;
   border: none;
@@ -88,9 +87,9 @@ a {
 }
 
 .search-form input {
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid #000000;
-  background-color: transparent;
 }
 
 .search-form input:-ms-input-placeholder {
@@ -110,8 +109,8 @@ a {
   font-size: 15px;
   line-height: 30px;
 
-  border: 2px solid #000000;
   background-color: transparent;
+  border: 2px solid #000000;
 }
 
 
@@ -139,12 +138,14 @@ a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
+  font-weight: 300;
 }
 
 .slider-item-feature th {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
+  font-weight: 300;
   color: #464646;
 }
 
@@ -176,3 +177,90 @@ a {
 }
 
 
+/* main */
+/* services */
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services-list {
+  /* border-right: 7px solid #000000; */
+  list-style: none;
+}
+
+.btn-active {
+  color: #f7e184;
+
+  background-color: #000000;
+}
+
+.services h3 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.services-description {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+
+/* main */
+/* brands */
+
+.brands-list {
+  list-style: none;
+}
+
+.brands-list img {
+  opacity: 0.2;
+  /* НУЖНО НАУЧИТЬСЯ ОБЕСЦВЕЧИВАТЬ картинки!!! */
+}
+
+
+/* main */
+/* info */
+
+.info h2 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.info p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
+
+.transport-companies-list {
+  list-style: none;
+}
+
+.transport-companies-list a {
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+}
+
+
+/* main */
+/* info */
+
+.contacts h2 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.contacts p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+}
