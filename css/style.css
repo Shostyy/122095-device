@@ -80,12 +80,17 @@ a {
   font-weight: 300;
 }
 
-.user-navigation,
-.product-navigation {
+.user-navigation a,
+.product-navigation a {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
+  color: #000000;
+}
+
+a.user-exit {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .search-form {
@@ -306,6 +311,10 @@ a {
   color: rgba(255, 255, 255, 0.7);
 }
 
+a.footer-user-exit {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-services,
 .footer-socials {
   list-style: none;
@@ -354,3 +363,11 @@ a {
 .modal-map img {
   background-color: #e9e9e9;
 }
+
+
+
+/* inner page */
+
+/* main */
+/* breadcrumbs */
+
