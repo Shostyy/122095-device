@@ -519,3 +519,35 @@ a.footer-user-exit {
   color: #464646;
 }
 
+
+/* main */
+/* pagination */
+
+.pagination-list {
+  background-color: #ebebeb;
+  list-style: none;
+}
+
+.pagination-list a {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.prev-page-btn a,
+.next-page-btn a {
+  color: rgba(0, 0, 0, 1);
+
+  background-color: #ebebeb; 
+}
+
+.page-number-btn a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-number-current a {
+  color: rgba(0, 0, 0, 1);
+}
+
+
+
