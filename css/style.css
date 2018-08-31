@@ -69,8 +69,26 @@ a {
   list-style: none;
 }
 
+.site-logo:hover,
+.site-logo:focus {
+  opacity: 0.6;
+}
+
+.site-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation a {
-  color: #000000;
+  color: rgba(0, 0, 0, 1);    
+}
+
+.site-navigation a:hover,
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.6);  
+}
+
+.site-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);  
 }
 
 .dropdown a {
@@ -86,7 +104,19 @@ a {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #000000;
+  color: rgba(0, 0, 0, 1);  
+}
+
+.user-navigation a:hover,
+.user-navigation a:focus,
+.product-navigation a:hover,
+.product-navigation a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation a:active,
+.product-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 a.user-exit {
@@ -101,7 +131,6 @@ a.user-exit {
 .search-form input {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #000000;
 }
 
 .search-form input:-ms-input-placeholder {
@@ -116,6 +145,26 @@ a.user-exit {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.search-form input:hover:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form input:hover::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.search-form input:focus:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 1);
+
+  border-bottom: 2px solid #000000;
+}
+
+.search-form input:focus::placeholder {
+  color: rgba(0, 0, 0, 1);
+
+  border-bottom: 2px solid #000000;
+}
+
 .search-button {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -125,6 +174,15 @@ a.user-exit {
   border: 2px solid #000000;
 }
 
+.search-button:hover {
+  color: rgba(255, 255, 255, 1);
+
+  background-color: #000000;
+}
+
+.search-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
 /* main */
 /* slider */
