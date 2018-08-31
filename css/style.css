@@ -369,5 +369,78 @@ a.footer-user-exit {
 /* inner page */
 
 /* main */
+
+.main-container h1 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+
+/* main */
 /* breadcrumbs */
 
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+/* main */
+/* filter */
+
+.filter {
+  background-color: #eeeeee;
+}
+
+.filter h2 {
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+
+  background-color: #dcdcdc;
+}
+
+.filter fieldset {
+  border: none;
+  border-top: 2px solid #000000;
+}
+
+.filter-price p {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.filter-color-list {
+  list-style: none;
+}
+
+.filter-color-item label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+.filter-bluetooth label {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 300;
+}
+
+/* main */
+/* sorting */
+
+.sorting {
+  background-color: #eeeeee;
+}
