@@ -287,7 +287,26 @@ a.user-exit {
   list-style: none;
 }
 
-.btn-active {
+.services-btn {
+  font: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 1);      
+
+  background-color: #f0c52e;
+  border: none;
+  border-top: 1px solid #f4d361;
+  border-bottom: 1px solid #f4d361;
+}
+
+.services-btn:hover,
+.services-btn:focus {
+  border: none;
+}
+
+.services-btn:active,
+.services-btn-active {
   color: #f7e184;
 
   background-color: #000000;
