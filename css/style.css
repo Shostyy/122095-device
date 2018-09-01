@@ -422,6 +422,10 @@ a.user-exit {
   color: rgba(255, 255, 255, 0.7);
 }
 
+a.footer-user-exit {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .footer-user-navigation a:hover,
 .footer-user-navigation a:focus,
 .footer-product-navigation a:hover,
@@ -432,10 +436,6 @@ a.user-exit {
 .footer-user-navigation a:active,
 .footer-product-navigation a:active {
   color: rgba(255, 255, 255, 0.3);  
-}
-
-a.footer-user-exit {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-site-navigation,
@@ -579,6 +579,15 @@ a.footer-user-exit {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrumbs a:active{
+  color: rgba(0, 0, 0, 0.1);
+}
+
 
 /* inner-page-main */
 /* filter */
@@ -612,19 +621,18 @@ a.footer-user-exit {
   list-style: none;
 }
 
-.filter-color-item label {
+.filter-form label {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: 300;
 }
 
-.filter-bluetooth label {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 40px;
-  font-weight: 300;
+.filter-form input[type="checkbox"]:disabled + label,
+.filter-form input[type="radio"]:disabled + label {
+  color: #a6a6a6;
 }
+
 
 
 /* inner-page-main */
