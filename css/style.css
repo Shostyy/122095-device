@@ -759,6 +759,20 @@ a.footer-user-exit {
   background-color: #ebebeb; 
 }
 
+.prev-page-btn a:hover,
+.prev-page-btn a:focus,
+.next-page-btn a:hover,
+.next-page-btn a:focus {
+  background-color: #d9d9d9; 
+}
+
+.prev-page-btn a:active,
+.next-page-btn a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #ebebeb; 
+}
+
 .page-number-btn a {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -767,5 +781,13 @@ a.footer-user-exit {
   color: rgba(0, 0, 0, 1);
 }
 
+.page-number-btn a:hover,
+.page-number-btn a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.page-number-btn a:active {
+  color: rgba(0, 0, 0, 1);
+}
 
 
