@@ -660,7 +660,16 @@ a.footer-user-exit {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.sort-current a {
+.sort-keywords-current a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sort-keywords-item a:hover,
+.sort-keywords-item a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sort-keywords-item a:active {
   color: rgba(0, 0, 0, 1);
 }
 
