@@ -34,6 +34,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: "Gilroy", Arial, sans-serif;
+  letter-spacing: 0.2px;
   color: #000000;
 
   background-color: #ffffff;
@@ -48,6 +49,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
+  letter-spacing: 3.7px;
   color: rgba(0, 0, 0, 1);      
 
   background-color: #f0c52e;
@@ -89,6 +91,7 @@ a {
 
 .nav-level-0 > a {
   text-transform: uppercase;
+  letter-spacing: 3.6px;
 }
 
 .site-navigation a {
@@ -207,6 +210,7 @@ a.user-exit {
 .slider-number {
   font-size: 179px;
   line-height: 179px;
+  letter-spacing: 1.8px;
   color: #ffffff;
 
   background-color: #000000;
@@ -215,6 +219,7 @@ a.user-exit {
 .slider-slogan {
   font-size: 47px;
   line-height: 56px;
+  letter-spacing: 0.5px;
 }
 
 .slider-description {
@@ -229,6 +234,7 @@ a.user-exit {
   font-size: 13px;
   line-height: 20px;
   font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 0.1px;
   color: #464646;
 }
 
@@ -237,6 +243,7 @@ a.user-exit {
   font-size: 36px;
   line-height: 48px;
   font-family: "Gilroy", Arial, sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .slider-switch-list {
@@ -296,6 +303,7 @@ a.user-exit {
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
+  letter-spacing: 3.7px;
   color: rgba(0, 0, 0, 1);      
 
   background-color: #f0c52e;
@@ -320,6 +328,7 @@ a.user-exit {
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.5px;
 }
 
 .services-description {
@@ -345,6 +354,7 @@ a.user-exit {
 .info h2 {
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.5px;
 }
 
 .info p {
@@ -352,10 +362,13 @@ a.user-exit {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: normal;
   color: #464646;
 }
 
 .transport-companies-list {
+  letter-spacing: normal;
+
   list-style: none;
 }
 
@@ -372,6 +385,7 @@ a.user-exit {
 .contacts h2 {
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.5px;
 }
 
 .contacts p {
@@ -379,6 +393,7 @@ a.user-exit {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: normal;
   color: #464646;
 }
 
@@ -409,6 +424,7 @@ a.user-exit {
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: normal;
 }
 
 .footer-user-navigation,
@@ -449,6 +465,7 @@ a.footer-user-exit {
 
 .footer-site-navigation a {
   text-transform: uppercase;
+  letter-spacing: 3.6px;
   color: rgba(255, 255, 255, 1);
 }
 
@@ -493,6 +510,10 @@ a.footer-user-exit {
 
 
 /* modal */
+
+.feedback-form {
+  letter-spacing: normal;
+}
 
 .feedback-form input,
 .feedback-form textarea {
