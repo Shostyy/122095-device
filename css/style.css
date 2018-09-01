@@ -590,6 +590,7 @@ a.footer-user-exit {
 .main-container h1 {
   font-size: 47px;
   line-height: 48px;
+  letter-spacing: 0.5px;
 }
 
 
@@ -605,6 +606,7 @@ a.footer-user-exit {
   font-size: 14px;
   line-height: 24px;
   font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 0.1px;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -629,6 +631,7 @@ a.footer-user-exit {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 3.5px;
 
   background-color: #dcdcdc;
 }
@@ -643,6 +646,7 @@ a.footer-user-exit {
   font-size: 14px;
   line-height: 24px;
   font-family: "Gilroy", Arial, sans-serif;
+  letter-spacing: normal;
   color: rgba(0, 0, 0, 0.2);
 }
 
@@ -655,6 +659,7 @@ a.footer-user-exit {
   font-size: 14px;
   line-height: 40px;
   font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: 0.1px;
 }
 
 .filter-form input[type="checkbox"]:disabled + label,
@@ -675,6 +680,7 @@ a.footer-user-exit {
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
+  letter-spacing: 3.5px;
 }
 
 .sort-keywords-list {
@@ -686,6 +692,7 @@ a.footer-user-exit {
   font-size: 14px;
   line-height: 18px;
   font-family: "Open Sans", Arial, sans-serif;
+  letter-spacing: normal;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -779,6 +786,7 @@ a.footer-user-exit {
   font-weight: 800;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 3.5px;
 }
 
 .prev-page-btn a,
