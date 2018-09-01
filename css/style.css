@@ -87,6 +87,10 @@ a {
   opacity: 0.3;
 }
 
+.nav-level-0 > a {
+  text-transform: uppercase;
+}
+
 .site-navigation a {
   color: rgba(0, 0, 0, 1);    
 }
@@ -443,7 +447,11 @@ a.footer-user-exit {
   list-style: none;
 }
 
-.footer-site-navigation a,
+.footer-site-navigation a {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 1);
+}
+
 .footer-socials a {
   color: rgba(255, 255, 255, 1);    
 }
@@ -754,6 +762,7 @@ a.footer-user-exit {
 
 .prev-page-btn a,
 .next-page-btn a {
+  text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 
   background-color: #ebebeb; 
