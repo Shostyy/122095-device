@@ -1,27 +1,31 @@
 @font-face {
   font-family: "Gilroy";
-  src: url("../font/gilroylight.woff2");
+  src: url("../font/gilroylight.woff2") format('woff2'),
+       url("../font/gilroylight.woff") format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Gilroy";
-  src: url("../font/gilroyextrabold.woff2");
+  src: url("../font/gilroyextrabold.woff2") format('woff2'),
+       url("../font/gilroyextrabold.woff") format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../font/opensanslight.woff2");
+  src: url("../font/opensanslight.woff2") format('woff2'),
+       url("../font/opensanslight.woff") format('woff');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url("../font/opensans.woff2");
+  src: url("../font/opensans.woff2") format('woff2'),
+       url("../font/opensans.woff") format('woff');
   font-weight: 400;
   font-style: normal; 
 }
@@ -169,16 +173,20 @@ a.user-exit {
   color: rgba(0, 0, 0, 0.6);
 }
 
+.search-form input:focus {
+  border-bottom: 2px solid #000000;
+}
+
 .search-form input:focus:-ms-input-placeholder {
   color: rgba(0, 0, 0, 1);
+}
 
+.search-form input:focus {
   border-bottom: 2px solid #000000;
 }
 
 .search-form input:focus::placeholder {
   color: rgba(0, 0, 0, 1);
-
-  border-bottom: 2px solid #000000;
 }
 
 .search-button {
