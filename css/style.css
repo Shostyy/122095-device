@@ -692,6 +692,10 @@ a.footer-user-exit {
   color: #000000;
 }
 
+.product-image:hover {
+  opacity: 0.7;
+}
+
 .product-new {
   text-transform: uppercase;
   
@@ -714,6 +718,15 @@ a.footer-user-exit {
 
   background-color: transparent;
   border: none;
+}
+
+.btn-compare:hover,
+.btn-compare:focus {
+  color: rgba(0, 0, 0, 1);
+}
+
+.btn-compare:active {
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .product-cost {
