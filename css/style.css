@@ -49,6 +49,8 @@ a {
 }
 
 .btn {
+  padding: 8px 0;
+
   font: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -56,16 +58,15 @@ a {
   letter-spacing: 3.6px;
   color: rgba(0, 0, 0, 1);      
 
-  background-color: transparent;
-  background-image: linear-gradient(
-    #f4d361 1px,
-    #f0c52e 1px,
-    #f0c52e 7px,
-    #f4d361 7px
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 16px,
+    #f0c52e 16px,
+    #f0c52e 24px,
+    transparent 24px,
+    transparent 100%
   );
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: auto 8px;
   border: none;
 
   cursor: pointer;
@@ -73,8 +74,11 @@ a {
 
 .btn:hover,
 .btn:focus {
-  background-image: linear-gradient(#f0c52e 0%,#f0c52e 100%);
-  background-size: auto 40px;
+  background-image: linear-gradient(
+    to bottom,
+    #f0c52e 0%,
+    #f0c52e 100%
+  );
 }
 
 .btn:active {
@@ -330,7 +334,10 @@ a.user-exit {
   list-style: none;
 }
 
+
 .services-btn {
+  padding: 8px 0;
+
   font: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -338,16 +345,15 @@ a.user-exit {
   letter-spacing: 3.6px;
   color: rgba(0, 0, 0, 1);      
 
-  background-color: transparent;
-  background-image: linear-gradient(
-    #f4d361 1px,
-    #f0c52e 1px,
-    #f0c52e 7px,
-    #f4d361 7px
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 16px,
+    #f0c52e 16px,
+    #f0c52e 24px,
+    transparent 24px,
+    transparent 100%
   );
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 160px 8px;
   border: none;
 
   cursor: pointer;
@@ -355,8 +361,11 @@ a.user-exit {
 
 .services-btn:hover,
 .services-btn:focus {
-  background-image: linear-gradient(#f0c52e 0%,#f0c52e 100%);
-  background-size: auto auto;
+  background-image: linear-gradient(
+    to bottom,
+    #f0c52e 0%,
+    #f0c52e 100%
+  );
 }
 
 .services-btn:active,
@@ -364,7 +373,6 @@ a.user-exit {
   color: #f7e184;
 
   background-image: linear-gradient(#000000 0%,#000000 100%);
-  background-size: auto auto;
 }
 
 .services h3 {
