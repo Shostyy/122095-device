@@ -49,6 +49,8 @@ a {
 }
 
 .btn {
+  padding: 8px 0;
+
   font: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -56,15 +58,27 @@ a {
   letter-spacing: 3.6px;
   color: rgba(0, 0, 0, 1);      
 
-  background-color: #f0c52e;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 16px,
+    #f0c52e 16px,
+    #f0c52e 24px,
+    transparent 24px,
+    transparent 100%
+  );
   border: none;
-  border-top: 1px solid #f4d361;
-  border-bottom: 1px solid #f4d361;
+
+  cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-  border: none;
+  background-image: linear-gradient(
+    to bottom,
+    #f0c52e 0%,
+    #f0c52e 100%
+  );
 }
 
 .btn:active {
@@ -320,7 +334,10 @@ a.user-exit {
   list-style: none;
 }
 
+
 .services-btn {
+  padding: 8px 0;
+
   font: inherit;
   text-align: center;
   text-transform: uppercase;
@@ -328,22 +345,34 @@ a.user-exit {
   letter-spacing: 3.6px;
   color: rgba(0, 0, 0, 1);      
 
-  background-color: #f0c52e;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 16px,
+    #f0c52e 16px,
+    #f0c52e 24px,
+    transparent 24px,
+    transparent 100%
+  );
   border: none;
-  border-top: 1px solid #f4d361;
-  border-bottom: 1px solid #f4d361;
+
+  cursor: pointer;
 }
 
 .services-btn:hover,
 .services-btn:focus {
-  border: none;
+  background-image: linear-gradient(
+    to bottom,
+    #f0c52e 0%,
+    #f0c52e 100%
+  );
 }
 
 .services-btn:active,
 .services-btn-active {
   color: #f7e184;
 
-  background-color: #000000;
+  background-image: linear-gradient(#000000 0%,#000000 100%);
 }
 
 .services h3 {
