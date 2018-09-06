@@ -434,6 +434,7 @@ a.user-exit {
 /* services */
 
 .services {
+  margin-bottom: 105px;
   padding-bottom: 69px;
 
   background-image: linear-gradient(
@@ -531,7 +532,17 @@ a.user-exit {
 /* brands */
 
 .brands-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.brands-item {
+  width: 260px;
 }
 
 
