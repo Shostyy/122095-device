@@ -10,12 +10,13 @@
 
 <body>
 
-  <header class="main-header">
+  <header class="main-header container">
 
     <nav class="main-navigation">
 
       <a>
-        <svg class="site-logo" xmlns="http://www.w3.org/2000/svg" width="164" height="36">
+        <svg aria-label="Логотип сайта" class="site-logo" xmlns="http://www.w3.org/2000/svg"
+          width="164" height="36">
           <path d="M13.518.662H-.014v33.6h13.532c9.327 0 16.431-7.3 16.431-16.8S22.845.662 13.518.662zm0 26.207h-5.8V8.05h5.8c5.316 0 8.988 3.648 8.988 9.408s-3.672 9.411-8.988 9.411zm29 0v-5.952h12.078v-7.3H42.514V8.05h13.292V.662H34.782v33.6h21.264v-7.393H42.514zm26.484 7.392h9.859L89.88.661h-8.458l-7.49 24.719L66.441.661h-8.457zM93.263.661v33.6h7.732V.661h-7.732zm30.156 34.271a16.782 16.782 0 0 0 14.5-7.776l-6.67-3.84a8.7 8.7 0 0 1-7.829 4.128c-5.992 0-9.858-3.984-9.858-9.984s3.866-9.984 9.858-9.984a8.759 8.759 0 0 1 7.829 4.128l6.67-3.84a16.9 16.9 0 0 0-14.5-7.776c-10.2 0-17.591 7.584-17.591 17.472s7.39 17.473 17.587 17.473zm26.34-8.064v-5.951h12.082v-7.3h-12.086V8.05h13.29V.662h-21.023v33.6h21.264v-7.393h-13.531z"
             fill-rule="evenodd" />
         </svg>
@@ -60,7 +61,7 @@
         <li class="nav-level-0">
           <a href="#">Контакты</a>
         </li>
-        
+
       </ul>
 
       <ul class="user-navigation">
@@ -92,16 +93,16 @@
 
     <h1 class="visually-hidden">Device</h1>
 
-    <div class="slider">
+    <div class="slider container">
       <ul class="slider-list">
 
         <li aria-label="Первый слайд">
           <span class="slider-number">01</span>
           <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка">
           <b class="slider-slogan">Делаем селфи, как Бен Стиллер!</b>
-          <p class="slider-description">Самая длинная палка для селфи доступна
-            в нашем магазине Восемь (Восемь, Карл!) метров длиной и весом
-            всего 5 килограмм
+          <p class="slider-description">Самая длинная палка для селфи
+            доступна в нашем магазине Восемь (Восемь, Карл!) метров
+            длиной и весом всего 5 килограмм
           </p>
           <a href="#" class="btn">Подробнее</a>
 
@@ -143,10 +144,11 @@
         <li aria-label="Третий слайд">
           <span class="slider-number">03</span>
           <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
-          <b class="slider-slogan">Порхает как бабочка, жалит как пчела!</b>
+          <b class="slider-slogan">Порхает как бабочка, жалит как
+            пчела!</b>
           <p class="slider-description">Этот обычный, на первый взгляд,
-            квадрокоптер оснащен мощным лазером, замаскированным под стандартную
-            камеру.
+            квадрокоптер оснащен мощным лазером, замаскированным под
+            стандартную камеру.
           </p>
           <a href="#" class="btn">Подробнее</a>
 
@@ -181,7 +183,7 @@
 
     </div>
 
-    <section class="products">
+    <section class="products container">
 
       <h2 class="visually-hidden">Популярные товары</h2>
 
@@ -251,16 +253,16 @@
 
       <div class="delivery">
         <h3>Доставка</h3>
-        <p class="services-description">Мы с удовольствием доставим ваш
-          товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+        <p class="services-description">Мы с удовольствием доставим ваш товар
+          прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
           зарабатываем, поднимая его на ваш этаж</p>
       </div>
 
       <div class="warranty">
         <h3>Гарантия</h3>
-        <p class="services-description">Если из-за возгорания купленного
-          у нас товара у вас сгорит дом - не переживайте, мы выдадим вам
-          новый. Товар, не дом, конечно же.
+        <p class="services-description">Если из-за возгорания купленного у нас
+          товара у вас сгорит дом - не переживайте, мы выдадим вам новый.
+          Товар, не дом, конечно же.
         </p>
       </div>
 
@@ -273,7 +275,7 @@
 
     </section>
 
-    <section class="brands">
+    <section class="brands container">
 
       <h2 class="visually-hidden">Логотипы компаний</h2>
 
@@ -311,110 +313,117 @@
 
     </section>
 
-    <section class="info">
+    <div class="container">
 
-      <h2>О нас</h2>
-      <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть
-        в каждом из нас.</p>
-      <p>Мы можем доставить ваш товар в самые отдаленные точки России!
-        DEVICE работает со многими транспортными компаниями:</p>
+      <section class="info ">
 
-      <ul class="transport-companies-list">
-        <li>
-          <a href="https://www.dellin.ru/">Деловые линии</a>
-        </li>
-        <li>
-          <a href="http://ae5000.ru/">Автотрейдинг</a>
-        </li>
-        <li>
-          <a href="https://www.jde.ru/">ЖелДорЭкспедиция</a>
-        </li>
-      </ul>
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в
+          каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE
+          работает со многими транспортными компаниями:</p>
 
-      <a class="btn" href="#">Подробнее о нас</a>
+        <ul class="transport-companies-list">
+          <li>
+            <a href="https://www.dellin.ru/">Деловые линии</a>
+          </li>
+          <li>
+            <a href="http://ae5000.ru/">Автотрейдинг</a>
+          </li>
+          <li>
+            <a href="https://www.jde.ru/">ЖелДорЭкспедиция</a>
+          </li>
+        </ul>
 
-    </section>
+        <a class="btn" href="#">Подробнее о нас</a>
 
-    <section class="contacts">
+      </section>
 
-      <h2>Контакты</h2>
-      <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
-        проверить работоспособность покупки. Всякое бывает.</p>
-      <a href="#">
-        <img src="img/map.png" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
-      </a>
-      <a class="btn" href="#">Напишите нам</a>
+      <section class="contacts">
 
-    </section>
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете
+          проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="#">
+          <img src="img/map.png" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
+        </a>
+        <a class="btn" href="#">Напишите нам</a>
+
+      </section>
+
+    </div>
 
   </main>
 
   <footer class="main-footer">
+    <div class="container">
 
-    <div>
-      <a>
-        <svg class="footer-site-logo" xmlns="http://www.w3.org/2000/svg" width="164"
-          height="36">
-          <path d="M13.518.662H-.014v33.6h13.532c9.327 0 16.431-7.3 16.431-16.8S22.845.662 13.518.662zm0 26.207h-5.8V8.05h5.8c5.316 0 8.988 3.648 8.988 9.408s-3.672 9.411-8.988 9.411zm29 0v-5.952h12.078v-7.3H42.514V8.05h13.292V.662H34.782v33.6h21.264v-7.393H42.514zm26.484 7.392h9.859L89.88.661h-8.458l-7.49 24.719L66.441.661h-8.457zM93.263.661v33.6h7.732V.661h-7.732zm30.156 34.271a16.782 16.782 0 0 0 14.5-7.776l-6.67-3.84a8.7 8.7 0 0 1-7.829 4.128c-5.992 0-9.858-3.984-9.858-9.984s3.866-9.984 9.858-9.984a8.759 8.759 0 0 1 7.829 4.128l6.67-3.84a16.9 16.9 0 0 0-14.5-7.776c-10.2 0-17.591 7.584-17.591 17.472s7.39 17.473 17.587 17.473zm26.34-8.064v-5.951h12.082v-7.3h-12.086V8.05h13.29V.662h-21.023v33.6h21.264v-7.393h-13.531z"
-            fill-rule="evenodd" fill="rgb(255, 198, 0)" />
-        </svg>
-      </a>
-      <p>г.Москва, ул.Строителей, 15</p>
+      <div>
+        <a>
+          <svg class="footer-site-logo" xmlns="http://www.w3.org/2000/svg"
+            width="164" height="36">
+            <path d="M13.518.662H-.014v33.6h13.532c9.327 0 16.431-7.3 16.431-16.8S22.845.662 13.518.662zm0 26.207h-5.8V8.05h5.8c5.316 0 8.988 3.648 8.988 9.408s-3.672 9.411-8.988 9.411zm29 0v-5.952h12.078v-7.3H42.514V8.05h13.292V.662H34.782v33.6h21.264v-7.393H42.514zm26.484 7.392h9.859L89.88.661h-8.458l-7.49 24.719L66.441.661h-8.457zM93.263.661v33.6h7.732V.661h-7.732zm30.156 34.271a16.782 16.782 0 0 0 14.5-7.776l-6.67-3.84a8.7 8.7 0 0 1-7.829 4.128c-5.992 0-9.858-3.984-9.858-9.984s3.866-9.984 9.858-9.984a8.759 8.759 0 0 1 7.829 4.128l6.67-3.84a16.9 16.9 0 0 0-14.5-7.776c-10.2 0-17.591 7.584-17.591 17.472s7.39 17.473 17.587 17.473zm26.34-8.064v-5.951h12.082v-7.3h-12.086V8.05h13.29V.662h-21.023v33.6h21.264v-7.393h-13.531z"
+              fill-rule="evenodd" fill="rgb(255, 198, 0)" />
+          </svg>
+        </a>
+        <p>г.Москва, ул.Строителей, 15</p>
+      </div>
+
+      <nav class="footer-navigation">
+
+        <ul class="footer-user-navigation">
+          <li>
+            <a href="#">Войти</a>
+          </li>
+        </ul>
+
+        <ul class="footer-product-navigation">
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+
+      </nav>
+
+      <div>
+
+        <ul class="footer-site-navigation">
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="footer-socials">
+          <li>
+            <a class="social-btn social-btn-facebook" href="#">Facebook</a>
+          </li>
+          <li>
+            <a class="social-btn social-btn-instagram" href="#">Instagram</a>
+          </li>
+          <li>
+            <a class="social-btn social-btn-twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <div>
+        <p>Тел: +7(495) 495-95-95</p>
+
+        <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">Логотип
+          HtmlAcademy</a>
+      </div>
+
     </div>
-
-    <nav class="footer-navigation">
-
-      <ul class="footer-user-navigation">
-        <li>
-          <a href="#">Войти</a>
-        </li>
-      </ul>
-
-      <ul class="footer-product-navigation">
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-
-    </nav>
-
-    <div>
-
-      <ul class="footer-site-navigation">
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантия</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-
-      <ul class="footer-socials">
-        <li>
-          <a class="social-btn social-btn-facebook" href="#">Facebook</a>
-        </li>
-        <li>
-          <a class="social-btn social-btn-instagram" href="#">Instagram</a>
-        </li>
-        <li>
-          <a class="social-btn social-btn-twitter" href="#">Twitter</a>
-        </li>
-      </ul>
-
-    </div>
-
-    <div>
-      <p>Тел: +7(495) 495-95-95</p>
-
-      <a class="logo-html" href="https://htmlacademy.ru/intensive/htmlcss">Логотип HtmlAcademy</a>
-    </div>
-
   </footer>
 
   <section class="modal modal-feedback">
