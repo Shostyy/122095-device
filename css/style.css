@@ -291,6 +291,10 @@ a.user-exit {
 /* main */
 /* slider */
 
+.slider {
+  margin-bottom: 95px;
+}
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -368,6 +372,10 @@ a.user-exit {
 /* main */
 /* products */
 
+.products {
+  margin-bottom: 80px;
+}
+
 .products-list {
   display: flex;
   justify-content: space-between;
@@ -426,14 +434,27 @@ a.user-exit {
 /* services */
 
 .services {
-  background-color: #e5e5e5;
+  padding-bottom: 69px;
+
+  background-image: linear-gradient(
+    transparent 100px,
+    #e5e5e5 100px
+  );
+}
+
+.services .container {
+  display: flex;
 }
 
 .services-list {
-  /* border-right: 7px solid #000000; */
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  border-right: 7px solid #000000;
+
   list-style: none;
 }
-
 
 .services-btn {
   padding: 8px 0;
@@ -472,10 +493,22 @@ a.user-exit {
 .services-btn-active {
   color: #f7e184;
 
-  background-image: linear-gradient(#000000 0%,#000000 100%);
+  background-image: linear-gradient(
+    #000000 0%,
+    #000000 100%
+  );
+}
+
+.services-wrapper {
+  width: 760px;
+  margin-left: auto;
+  padding-top: 80px;
 }
 
 .services h3 {
+  margin: 0;
+  padding: 0;
+
   font-weight: 800;
   font-size: 47px;
   line-height: 48px;
@@ -483,6 +516,9 @@ a.user-exit {
 }
 
 .services-description {
+  margin: 0;
+  padding: 0;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
