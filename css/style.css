@@ -636,6 +636,17 @@ a.user-exit {
   background-color: #464646;
 }
 
+.main-footer .container {
+  display: flex;
+
+  padding: 65px 20px;
+}
+
+.main-footer .left-wrapper {
+  width: 200px;
+  margin-right: auto;
+}
+
 .footer-site-logo:hover,
 .footer-site-logo:focus {
   opacity: 0.6;
@@ -653,40 +664,20 @@ a.user-exit {
   letter-spacing: normal;
 }
 
-.footer-user-navigation,
-.footer-product-navigation {
-  list-style: none;
-}
-
-.footer-user-navigation a,
-.footer-product-navigation a,
-.logo-html {
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 36px;
-  font-family: "Open Sans", Arial, sans-serif;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-a.footer-user-exit {
-  color: rgba(255, 255, 255, 0.3);
-}
-
-.footer-user-navigation a:hover,
-.footer-user-navigation a:focus,
-.footer-product-navigation a:hover,
-.footer-product-navigation a:focus {
-  color: rgba(255, 255, 255, 1);  
-}
-
-.footer-user-navigation a:active,
-.footer-product-navigation a:active {
-  color: rgba(255, 255, 255, 0.3);  
+.main-footer .middle-wrapper {
+  width: 440px;
 }
 
 .footer-site-navigation,
 .footer-socials {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.footer-site-navigation {
+  margin-bottom: 65px;
 }
 
 .footer-site-navigation a {
@@ -719,6 +710,48 @@ a.footer-user-exit {
 
 .social-btn:active {
   opacity: 0.1;
+}
+
+.main-footer .right-wrapper {
+  width: 360px;
+}
+
+.footer-navigation {
+  margin-bottom: 40px;
+}
+
+.footer-user-navigation,
+.footer-product-navigation {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-user-navigation a,
+.footer-product-navigation a,
+.logo-html {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 36px;
+  font-family: "Open Sans", Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+a.footer-user-exit {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus,
+.footer-product-navigation a:hover,
+.footer-product-navigation a:focus {
+  color: rgba(255, 255, 255, 1);  
+}
+
+.footer-user-navigation a:active,
+.footer-product-navigation a:active {
+  color: rgba(255, 255, 255, 0.3);  
 }
 
 .logo-html {
