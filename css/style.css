@@ -103,6 +103,10 @@ a {
   color: #000000;
 }
 
+.inner-main-header {
+  margin-bottom: 40px;
+}
+
 .main-header ul {
   list-style: none;
 }
@@ -855,7 +859,14 @@ a.footer-user-exit {
 
 /* main */
 
+.breadcrumbs-wrapper {
+  padding: 0 60px;
+}
+
 .main-container h1 {
+  margin: 0;
+  padding: 0;
+
   font-size: 47px;
   line-height: 48px;
   letter-spacing: 0.5px;
@@ -865,11 +876,15 @@ a.footer-user-exit {
 /* inner-page-main */
 /* breadcrumbs */
 
-.breadcrumbs {
+.breadcrumbs-list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.breadcrumbs a {
+.breadcrumbs-list a {
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
@@ -878,12 +893,12 @@ a.footer-user-exit {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.breadcrumbs a:hover,
-.breadcrumbs a:focus {
+.breadcrumbs-list a:hover,
+.breadcrumbs-list a:focus {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.breadcrumbs a:active{
+.breadcrumbs-list a:active{
   color: rgba(0, 0, 0, 0.1);
 }
 
