@@ -879,6 +879,7 @@ a.footer-user-exit {
 .breadcrumbs-list {
   width: 400px;
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
 
   list-style: none;
@@ -904,19 +905,97 @@ a.footer-user-exit {
 
 
 /* inner-page-main */
+/* wrappers */
+
+.wrapper-container {
+  display: flex;
+
+}
+
+.before-main-wrapper {
+  flex-grow: 1;
+
+  background-image: linear-gradient(
+    #dcdcdc 70px,
+    #eeeeee 70px
+  );
+}
+
+.main-wrapper {
+  display: flex;
+  flex-shrink: 0;
+
+  background-image: linear-gradient(
+    #eeeeee 70px,
+    transparent 70px
+  ),
+  linear-gradient(
+    to right,
+    #eeeeee 328px,
+    transparent 328px
+  );
+}
+
+.after-main-wrapper {
+  flex-grow: 1;
+
+  background-image: linear-gradient(
+    #eeeeee 70px,
+    transparent 70px
+  );
+}
+
+
+/* inner-page-main */
 /* filter */
 
 .filter {
-  background-color: #eeeeee;
+  width: 200px;
+  margin-right: 140px;
+  padding-left: 60px;
+
+  /* background-color: #eeeeee; */
 }
 
 .filter h2 {
+  position: relative;
+
+  height: 70px; /* Временная высота */
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.2px;
 
   background-color: #dcdcdc;
+}
+
+.filter h2::before {
+  position: absolute;
+  top: 0;
+  left: -80px;
+
+  width: 80px;
+  height: 70px;
+
+  background-color: #dcdcdc;
+
+  content: "";
+}
+
+.filter h2::after {
+  position: absolute;
+  top: 0;
+  right: -48px;
+
+  width: 48px;
+  height: 70px;
+
+  background-color: #dcdcdc;
+
+  content: "";
 }
 
 .filter fieldset {
@@ -951,15 +1030,22 @@ a.footer-user-exit {
 }
 
 
-
 /* inner-page-main */
 /* sort */
 
-.sort {
+.sort { 
+  display: flex;
+
+  width: 760px;
+
   background-color: #eeeeee;
 }
 
 .sort h2 {
+  height: 70px; /* Временная высота */
+  margin: 0;
+  padding: 0;
+
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -967,6 +1053,9 @@ a.footer-user-exit {
 }
 
 .sort-keywords-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -993,6 +1082,9 @@ a.footer-user-exit {
 }
 
 .sort-direction-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -1000,8 +1092,36 @@ a.footer-user-exit {
 /* inner-page-main */
 /* catalog */
 
+.catalog {
+  width: 760px;
+}
+
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+
+.catalog-item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-right: 40px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.product-name {
+  margin: 0;
+  padding: 0;
 }
 
 .product-name a {
@@ -1011,15 +1131,29 @@ a.footer-user-exit {
   color: #000000;
 }
 
+.catalog-item .image-wrapper {
+  order: -1;
+}
+
 .product-image:hover {
   opacity: 0.7;
 }
 
 .product-new {
+  position: absolute; /* Временые значения */
+  top: 45px;
+  right: 30px;
+
   text-transform: uppercase;
   
   border: 2px solid;
   opacity: 0.2;
+}
+
+.popup-buttons {
+  position: absolute; /* Временые значения */
+  top: 40%;
+  left: 20%;
 }
 
 .popup-buttons-list {
@@ -1049,6 +1183,9 @@ a.footer-user-exit {
 }
 
 .product-cost {
+  margin: 0;
+  padding: 0;
+
   font-weight: 300;
   font-size: 16px;
   line-height: 24px;
@@ -1061,7 +1198,22 @@ a.footer-user-exit {
 /* pagination */
 
 .pagination-list {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 0;
+  padding: 0;
+
   background-color: #ebebeb;
+  list-style: none;
+}
+
+.page-number-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
