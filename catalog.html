@@ -10,7 +10,7 @@
 
 <body>
 
-  <header class="main-header container">
+  <header class="main-header">
 
     <nav class="main-navigation">
 
@@ -21,6 +21,34 @@
             fill-rule="evenodd" />
         </svg>
       </a>
+
+      <div class="wrapper">
+
+        <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search-field">Поиск</label>
+          <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+
+        <ul class="user-navigation">
+          <li>
+            <a href="#">Валентин Петухов</a>
+          </li>
+          <li>
+            <a class="user-exit" href="#">Выйти</a>
+          </li>
+        </ul>
+
+        <ul class="product-navigation">
+          <li>
+            <a href="#">Сравнить</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
+
+      </div>
 
       <ul class="site-navigation">
 
@@ -64,31 +92,7 @@
 
       </ul>
 
-      <ul class="user-navigation">
-        <li>
-          <a href="#">Валентин Петухов</a>
-        </li>
-        <li>
-          <a class="user-exit" href="#">Выйти</a>
-        </li>
-      </ul>
-
-      <ul class="product-navigation">
-        <li>
-          <a href="#">Сравнить</a>
-        </li>
-        <li>
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
-
     </nav>
-
-    <form class="search-form" method="GET" action="https://echo.htmlacademy.ru">
-      <label class="visually-hidden" for="search-field">Поиск</label>
-      <input type="text" name="search" id="search-field" placeholder="Поиск по сайту">
-      <button class="search-button" type="submit">Найти</button>
-    </form>
 
   </header>
 
