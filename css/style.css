@@ -640,6 +640,10 @@ a.user-exit {
   background-color: #464646;
 }
 
+.main-footer-catalog {
+  margin-top: 0;
+}
+
 .main-footer .container {
   display: flex;
 
@@ -907,23 +911,10 @@ a.footer-user-exit {
 /* inner-page-main */
 /* wrappers */
 
-.wrapper-container {
-  display: flex;
-
-}
-
-.before-main-wrapper {
-  flex-grow: 1;
-
-  background-image: linear-gradient(
-    #dcdcdc 70px,
-    #eeeeee 70px
-  );
-}
 
 .main-wrapper {
   display: flex;
-  flex-shrink: 0;
+  justify-content: space-between;
 
   background-image: linear-gradient(
     #eeeeee 70px,
@@ -936,33 +927,39 @@ a.footer-user-exit {
   );
 }
 
-.after-main-wrapper {
-  flex-grow: 1;
-
-  background-image: linear-gradient(
-    #eeeeee 70px,
-    transparent 70px
-  );
-}
-
 
 /* inner-page-main */
 /* filter */
 
 .filter {
-  width: 200px;
-  margin-right: 140px;
-  padding-left: 60px;
+  position: relative;
 
-  /* background-color: #eeeeee; */
+  width: 200px;
+}
+
+.filter::before {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  bottom: 0;
+  left: 0;
+
+  margin-left: calc(50% - 50vw);
+
+  background-color: #eeeeee;
+
+  content: "";
 }
 
 .filter h2 {
   position: relative;
 
+  width: 200px;
   height: 70px; /* Временная высота */
   margin: 0;
   padding: 0;
+  padding-right: 68px;
+  padding-left: 60px;
 
   font-size: 16px;
   line-height: 24px;
@@ -975,30 +972,27 @@ a.footer-user-exit {
 .filter h2::before {
   position: absolute;
   top: 0;
-  left: -80px;
+  right: 328px;
+  bottom: 0;
+  left: 0;
 
-  width: 80px;
-  height: 70px;
+  margin-left: calc(50% - 50vw);
 
   background-color: #dcdcdc;
 
   content: "";
 }
 
-.filter h2::after {
-  position: absolute;
-  top: 0;
-  right: -48px;
-
-  width: 48px;
-  height: 70px;
-
-  background-color: #dcdcdc;
-
-  content: "";
+.filter-form {
+  width: 200px;
+  padding-right: 140px;
+  padding-left: 60px;
 }
 
 .filter fieldset {
+  margin: 0;
+  padding: 0;
+
   border: none;
   border-top: 2px solid #000000;
 }
@@ -1013,6 +1007,9 @@ a.footer-user-exit {
 }
 
 .filter-color-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -1033,12 +1030,30 @@ a.footer-user-exit {
 /* inner-page-main */
 /* sort */
 
+
 .sort { 
+  position: relative;
+
   display: flex;
 
   width: 760px;
+  margin-bottom: 69px;
 
   background-color: #eeeeee;
+}
+
+.sort::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 760px;
+
+  margin-right: calc(50% - 50vw);
+
+  background-color: #eeeeee;
+
+  content: "";
 }
 
 .sort h2 {
@@ -1092,6 +1107,7 @@ a.footer-user-exit {
 /* inner-page-main */
 /* catalog */
 
+
 .catalog {
   width: 760px;
 }
@@ -1133,6 +1149,9 @@ a.footer-user-exit {
 
 .catalog-item .image-wrapper {
   order: -1;
+
+  margin: 0;
+  padding: 0;
 }
 
 .product-image:hover {
@@ -1202,6 +1221,7 @@ a.footer-user-exit {
   justify-content: space-between;
 
   margin: 0;
+  margin-bottom: 77px;
   padding: 0;
 
   background-color: #ebebeb;
