@@ -112,9 +112,6 @@ a {
 }
 
 .main-navigation {
-  display: flex;
-  flex-direction: column;
-
   padding: 0 60px;
 
   background-image: linear-gradient(
@@ -911,16 +908,18 @@ a.footer-user-exit {
 /* inner-page-main */
 /* wrappers */
 
+.container-wrapper {
+  background-image: linear-gradient(
+    #eeeeee 70px,
+    transparent 70px
+  );
+}
 
-.main-wrapper {
+.main-content-wrapper {
   display: flex;
   justify-content: space-between;
 
   background-image: linear-gradient(
-    #eeeeee 70px,
-    transparent 70px
-  ),
-  linear-gradient(
     to right,
     #eeeeee 328px,
     transparent 328px
@@ -1040,20 +1039,6 @@ a.footer-user-exit {
   margin-bottom: 69px;
 
   background-color: #eeeeee;
-}
-
-.sort::after {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 760px;
-
-  margin-right: calc(50% - 50vw);
-
-  background-color: #eeeeee;
-
-  content: "";
 }
 
 .sort h2 {
