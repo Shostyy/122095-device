@@ -764,8 +764,8 @@ a.user-exit {
   display: none;
 }
 
-.brands-item a:hover .logo-color,
-.brands-item a:focus .logo-color {
+.brands-item-link:hover .logo-color,
+.brands-item-link:focus .logo-color {
   display: block;
 }
 
@@ -776,6 +776,8 @@ a.user-exit {
 .index-columns {
   display: flex;
   justify-content: space-between;
+
+  padding-top: 45px;
 }
 
 .info {
@@ -783,7 +785,10 @@ a.user-exit {
 }
 
 .info h2 {
+  position: relative;
+
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
 
   font-size: 47px;
@@ -791,7 +796,22 @@ a.user-exit {
   letter-spacing: 0.5px;
 }
 
+.info h2::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
 .info p {
+  margin: 0;
+  margin-bottom: 35px;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -800,9 +820,15 @@ a.user-exit {
   color: #464646;
 }
 
+.info p:nth-of-type(2) {
+  margin-bottom: 70px;
+}
+
 .transport-companies-list {
   margin: 0;
+  margin-bottom: 60px;
   padding: 0;
+  padding-left: 19px;
 
   letter-spacing: normal;
 
@@ -810,9 +836,18 @@ a.user-exit {
 }
 
 .transport-companies-list a {
+  position: relative;
+
+  padding-left: 20px;
+
   font-size: 16px;
   line-height: 40px;
   color: #000000;
+}
+
+.index-columns .button {
+  display: block;
+  width: 260px;
 }
 
 
@@ -824,7 +859,10 @@ a.user-exit {
 }
 
 .contacts h2 {
+  position: relative;
+
   margin: 0;
+  margin-bottom: 45px;
   padding: 0;
 
   font-size: 47px;
@@ -832,13 +870,33 @@ a.user-exit {
   letter-spacing: 0.5px;
 }
 
+.contacts h2::before {
+  content: "";
+  position: absolute;
+  top: -45px;
+  left: 0;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #000000;
+}
+
 .contacts p {
+  margin: 0;
+  margin-bottom: 35px;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
   font-family: "Open Sans", Arial, sans-serif;
   letter-spacing: normal;
   color: #464646;
+}
+
+.contacts-img-link {
+  display: block;
+  margin-bottom: 80px;
 }
 
 .contacts img {
