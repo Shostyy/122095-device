@@ -752,7 +752,21 @@ a.user-exit {
 }
 
 .brands-item {
+  position: relative;
+
   width: 260px;
+}
+
+.logo-color {
+  position: absolute;
+  top: 0;
+
+  display: none;
+}
+
+.brands-item a:hover .logo-color,
+.brands-item a:focus .logo-color {
+  display: block;
 }
 
 
