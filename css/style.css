@@ -329,13 +329,13 @@ a.user-exit {
   top: 162px;
   left: 0;
   z-index: 1;
+  box-sizing: border-box;
 
   display: none;
   width: 100%;
   min-height: 142px;
   margin: 0;
   padding: 35px 60px;
-  box-sizing: border-box;
   /* column-count: 3; */
   column-width: 240px;
 
@@ -614,16 +614,18 @@ a.user-exit {
   margin: 0;
   padding: 0;
   padding-top: 80px;
+  
   border-right: 7px solid #000000;
 
   list-style: none;
 }
 
 .services-button {
+  box-sizing: content-box;
+
   width: 160px;
   padding: 8px 0;
   margin-bottom: 25px;
-  box-sizing: content-box;
 
   font: inherit;
   text-align: center;
@@ -676,6 +678,7 @@ a.user-exit {
 
 .services-slide {
   position: absolute;
+  
   display: none;
 }
 
@@ -1086,14 +1089,6 @@ a.footer-user-exit {
   padding-right: 9px;
   padding-left: 6px;
 }
-
-/* .footer-site-navigation li {
-  margin-right: 30px;
-}
-
-.footer-site-navigation li:last-of-type {
-  margin-right: 0;
-} */
 
 .footer-site-navigation a {
   text-transform: uppercase;
