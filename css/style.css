@@ -929,6 +929,25 @@ a.user-exit {
   margin-right: auto;
 }
 
+.left-wrapper a {
+  position: relative;
+
+  display: block;
+  margin-bottom: 30px;
+}
+
+.left-wrapper a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -145px;
+
+  width: 80px;
+  height: 7px;
+
+  background-color: #ffc600;
+}
+
 .footer-site-logo:hover,
 .footer-site-logo:focus {
   opacity: 0.6;
@@ -939,6 +958,8 @@ a.user-exit {
 }
 
 .main-footer p {
+  margin: 0;
+
   font-weight: 300;
   font-size: 15px;
   line-height: 30px;
@@ -948,6 +969,7 @@ a.user-exit {
 
 .main-footer .middle-wrapper {
   width: 440px;
+  padding-top: 75px;
 }
 
 .footer-site-navigation,
@@ -959,6 +981,8 @@ a.user-exit {
 }
 
 .footer-site-navigation {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 65px;
 }
 
@@ -966,10 +990,6 @@ a.user-exit {
   text-transform: uppercase;
   letter-spacing: 3.6px;
   color: rgba(255, 255, 255, 1);
-}
-
-.footer-socials a {
-  color: rgba(255, 255, 255, 1);    
 }
 
 .footer-site-navigation a:hover,
@@ -981,8 +1001,34 @@ a.user-exit {
   color: rgba(255, 255, 255, 0.3);  
 }
 
-.social-button {
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-socials .social-button {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-right: 23px;
+  margin-bottom: 23px;
+
+  color: rgba(255, 255, 255, 1);   
+
   opacity: 0.3;
+}
+
+.social-button-facebook {
+  background-image: url("../img/fb.svg");
+}
+
+.social-button-instagram {
+  background-image: url("../img/instagram.svg");
+}
+
+.social-button-twitter {
+  background-image: url("../img/twitter.svg");
 }
 
 .social-button:hover,
@@ -999,11 +1045,13 @@ a.user-exit {
 }
 
 .footer-navigation-wrapper {
+  display: flex;
   margin-bottom: 40px;
 }
 
 .footer-user-navigation,
 .footer-product-navigation {
+  display: flex;
   margin: 0;
   padding: 0;
 
@@ -1037,6 +1085,13 @@ a.footer-user-exit {
 }
 
 .logo-html {
+  display: block;
+  width: 27px;
+  height: 35px;
+
+  color: rgba(255, 255, 255, 1); 
+
+  background-image: url("../img/logo-html.svg");
   opacity: 1;
 }
 
