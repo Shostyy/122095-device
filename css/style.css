@@ -620,7 +620,10 @@ a.user-exit {
 }
 
 .services-button {
+  width: 160px;
   padding: 8px 0;
+  margin-bottom: 25px;
+  box-sizing: content-box;
 
   font: inherit;
   text-align: center;
@@ -660,16 +663,56 @@ a.user-exit {
     #000000 0%,
     #000000 100%
   );
+  border-right: 140px solid #000000;
 }
 
 .services-wrapper {
+  position: relative;
+
   width: 760px;
   margin-left: auto;
-  padding-top: 80px;
+  padding-top: 72px;
+}
+
+.services-slide {
+  position: absolute;
+  display: none;
+}
+
+.services-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -324px;
+
+  width: 260px;
+  height: 230px;
+
+  background-repeat: no-repeat;
+}
+
+.services-delivery::after {
+  background-image: url("../img/delivery.svg");
+  background-position: center;
+}
+
+.services-warranty::after {
+  background-image: url("../img/warranty.svg");
+  background-position: center;
+}
+
+.services-credit::after {
+  background-image: url("../img/credit.svg");
+  background-position: center;
+}
+
+.services-slide-active {
+  display: block;
 }
 
 .services h3 {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
 
   font-weight: 800;
@@ -679,6 +722,7 @@ a.user-exit {
 }
 
 .services-description {
+  width: 436px;
   margin: 0;
   padding: 0;
 
