@@ -241,9 +241,11 @@ input[type="radio"].visually-hidden {
 
   background-color: transparent;
   border: 2px solid #000000;
+
+  cursor: pointer;
 }
 
-input:focus .search-button {
+input:focus ~ .search-button {
   display: block;
 }
 
@@ -1432,21 +1434,11 @@ a.footer-user-exit {
 /* wrappers */
 
 .container-wrapper {
-  background-image: linear-gradient(
-    #eeeeee 70px,
-    transparent 70px
-  );
+  overflow: hidden;
 }
 
 .main-content-wrapper {
   display: flex;
-  justify-content: space-between;
-
-  background-image: linear-gradient(
-    to right,
-    #eeeeee 328px,
-    transparent 328px
-  );
 }
 
 
@@ -1456,32 +1448,31 @@ a.footer-user-exit {
 .filter {
   position: relative;
 
-  width: 200px;
+  width: 328px;
+  padding-left: 60px;
+  box-sizing: border-box;
 }
 
 .filter::before {
+  content: "";
   position: absolute;
   top: 0;
-  right: 200px;
+  right: 0;
   bottom: 0;
   left: 0;
+  z-index: -1;
 
   margin-left: calc(50% - 50vw);
 
   background-color: #eeeeee;
-
-  content: "";
 }
 
 .filter h2 {
   position: relative;
 
-  width: 200px;
   height: 70px; /* Временная высота */
   margin: 0;
   padding: 0;
-  padding-right: 68px;
-  padding-left: 60px;
 
   font-size: 16px;
   line-height: 24px;
@@ -1492,23 +1483,21 @@ a.footer-user-exit {
 }
 
 .filter h2::before {
+  content: "";
   position: absolute;
   top: 0;
-  right: 328px;
+  right: 0;
   bottom: 0;
   left: 0;
+  z-index: -1;
 
   margin-left: calc(50% - 50vw);
 
   background-color: #dcdcdc;
-
-  content: "";
 }
 
 .filter-form {
   width: 200px;
-  padding-right: 140px;
-  padding-left: 60px;
 }
 
 .filter fieldset {
@@ -1552,6 +1541,9 @@ a.footer-user-exit {
 /* inner-page-main */
 /* sort */
 
+.catalog-right-column {
+  width: 832px;
+}
 
 .sort { 
   position: relative;
@@ -1560,6 +1552,19 @@ a.footer-user-exit {
 
   width: 760px;
   margin-bottom: 69px;
+  padding-left: 72px;
+}
+
+.sort::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+
+  margin-right: calc(50% - 50vw);
 
   background-color: #eeeeee;
 }
@@ -1617,7 +1622,7 @@ a.footer-user-exit {
 
 
 .catalog {
-  width: 760px;
+  padding-left: 72px;
 }
 
 .catalog-list {
@@ -1730,6 +1735,7 @@ a.footer-user-exit {
 
   margin: 0;
   margin-bottom: 77px;
+  margin-left: 72px;
   padding: 0;
 
   background-color: #ebebeb;
