@@ -489,8 +489,6 @@ a.user-exit {
   line-height: 179px;
   letter-spacing: 1.8px;
   color: #ffffff;
-
-  background-color: rgba(0, 0, 0, 0.11);
 }
 
 .slider-item .image-wrapper {
@@ -519,6 +517,8 @@ a.user-exit {
 }
 
 .slider-item .wrapper {
+  z-index: 1;
+
   width: 560px;
   margin-top: 80px;
 }
