@@ -1481,6 +1481,7 @@ a.footer-user-exit {
 
 .main-container h1 {
   margin: 0;
+  margin-bottom: 25px;
   padding: 0;
 
   font-size: 47px;
@@ -1493,12 +1494,32 @@ a.footer-user-exit {
 /* breadcrumbs */
 
 .breadcrumbs-list {
-  width: 400px;
+  display: flex;
+  width: 500px;
   margin: 0;
   margin-bottom: 45px;
   padding: 0;
 
   list-style: none;
+}
+
+.breadcrumbs-list li {
+  position: relative;
+
+  padding-right: 38px;
+}
+
+.breadcrumbs-list li:not(:last-of-type)::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 15px;
+
+  width: 4px;
+  height: 7px;
+
+  background-image: url("../img/nav-arrow.svg");
+  background-repeat: no-repeat;
 }
 
 .breadcrumbs-list a {
@@ -1560,14 +1581,17 @@ a.footer-user-exit {
 .filter h2 {
   position: relative;
 
+  box-sizing: border-box;
   height: 70px; /* Временная высота */
   margin: 0;
   padding: 0;
+  padding-top: 22px;
 
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 3.2px;
+  vertical-align: middle;
 
   background-color: #dcdcdc;
 }
@@ -1588,14 +1612,24 @@ a.footer-user-exit {
 
 .filter-form {
   width: 200px;
+  margin-top: 69px;
 }
 
-.filter fieldset {
+.filter-form fieldset {
+  position: relative;
+
   margin: 0;
   padding: 0;
+  padding-top: 56px;
 
   border: none;
   border-top: 2px solid #000000;
+}
+
+.filter-form legend {
+  position: absolute;
+  top: 12px;
+  left: 0;
 }
 
 .filter-price p {
@@ -1615,6 +1649,8 @@ a.footer-user-exit {
 }
 
 .filter-form label {
+  padding-left: 40px;
+
   font-weight: 300;
   font-size: 14px;
   line-height: 40px;
