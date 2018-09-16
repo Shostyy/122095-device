@@ -1699,6 +1699,10 @@ a.footer-user-exit {
   margin-right: 64px;
 }
 
+.filter-form .filter-color {
+  margin-bottom: 41px;
+}
+
 .filter-color-list {
   margin: 0;
   padding: 0;
@@ -1707,6 +1711,8 @@ a.footer-user-exit {
 }
 
 .filter-form label {
+  position: relative;
+
   padding-left: 40px;
 
   font-weight: 300;
@@ -1718,9 +1724,83 @@ a.footer-user-exit {
   cursor: pointer;
 }
 
+.filter-color label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 23px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-color label::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  display: none;
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+}
+
+.filter-color input:checked ~ label::after {
+  display: block;
+}
+
+.filter-form .filter-bluetooth {
+  margin-bottom: 35px;
+}
+
+.filter-bluetooth p {
+  margin: 0;
+}
+
+.filter-bluetooth label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 17px;
+  height: 17px;
+
+  border: 4px solid #000000;
+  border-radius: 50%;
+}
+
+.filter-bluetooth label::after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 8px;
+
+  display: none;
+  width: 9px;
+  height: 9px;
+
+  background-color: #000000;
+  border-radius: 50%;
+}
+
+.filter-bluetooth input:checked ~ label::after {
+  display: block;
+}
+
 .filter-form input[type="checkbox"]:disabled + label,
 .filter-form input[type="radio"]:disabled + label {
   color: #a6a6a6;
+}
+
+.filter-form .button {
+  width: 200px;
 }
 
 
