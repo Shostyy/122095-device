@@ -1008,21 +1008,33 @@ a.user-exit {
   margin: 0;
   margin-bottom: 60px;
   padding: 0;
-  padding-left: 19px;
 
   letter-spacing: normal;
 
-  list-style: circle;
+  list-style: none;
 }
 
 .transport-companies-list a {
   position: relative;
 
-  padding-left: 20px;
+  padding-left: 39px;
 
   font-size: 16px;
   line-height: 40px;
   color: #000000;
+}
+
+.transport-companies-list a::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
 }
 
 .index-columns .button {
