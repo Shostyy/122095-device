@@ -487,6 +487,72 @@ a.user-exit {
   margin-bottom: 95px;
 }
 
+.slider-controls {
+  position: absolute;
+  right: 60px;
+  bottom: 138px;
+  z-index: 5;
+  
+  display: flex;
+  width: 120px;
+  padding-right: 23px;
+  padding-left: 19px;
+
+  text-align: center;
+  font-size: 0;
+}
+
+.slider-controls label {
+  position: relative;
+  
+  /* display: inline-block; */
+  width: 11px;
+  height: 11px;
+  margin-right: 21px;
+  
+  border: 1px solid #000000;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+.slider-controls label:last-of-type {
+  margin-right: 0;
+}
+
+#slide-1:checked ~ .slider-controls .slider-controls-item--1::after,
+#slide-2:checked ~ .slider-controls .slider-controls-item--2::after,
+#slide-3:checked ~ .slider-controls .slider-controls-item--3::after {
+  content: "";
+  
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  z-index: 1;
+  
+  width: 3px;
+  height: 3px;
+  
+  background: #ffffff;  
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+#slide-1:checked ~ .slider-list .slider-item:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+
+#slide-2:checked ~ .slider-list .slider-item:nth-child(2) {
+  display: flex;
+  justify-content: space-between;
+}
+
+#slide-3:checked ~ .slider-list .slider-item:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+
 .slider-list {
   margin: 0;
   padding: 0;
@@ -501,11 +567,6 @@ a.user-exit {
 
 .slider-item {
   display: none;
-}
-
-.slider-item-current {
-  display: flex;
-  justify-content: space-between;
 }
 
 .slider-number {
@@ -529,17 +590,17 @@ a.user-exit {
   position: absolute;
 }
 
-.slider-item-1 img {
+.slider-item:nth-child(1) img {
   top: 0;
   left: 116px;
 }
 
-.slider-item-2 img {
+.slider-item:nth-child(2) img {
   top: 14px;
   left: 90px;
 }
 
-.slider-item-3 img {
+.slider-item:nth-child(3) img {
   top: 65px;
   left: 31px;
 }
@@ -577,8 +638,8 @@ a.user-exit {
 }
 
 .slider-item-feature tbody {
-  display: flex;
-  flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .slider-item-feature th {
@@ -608,17 +669,6 @@ a.user-exit {
 
 .slider-item-feature td:nth-of-type(2) {
   width: 140px;
-}
-
-.slider-switch-list {
-  position: absolute;
-  right: 0;
-  bottom: 80px;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 }
 
 

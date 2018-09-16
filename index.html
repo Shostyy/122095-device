@@ -122,9 +122,18 @@
 
         <h2 class="visually-hidden">Слайдер</h2>
 
+        <input class="visually-hidden" id="slide-1" type="radio" name="slide-toggle" checked>
+        <input class="visually-hidden" id="slide-2" type="radio" name="slide-toggle">
+        <input class="visually-hidden" id="slide-3" type="radio" name="slide-toggle">
+        <div class="slider-controls">
+          <label class="slider-controls-item slider-controls-item--1" for="slide-1">Первый слайд</label>
+          <label class="slider-controls-item slider-controls-item--2" for="slide-2">Второй слайд</label>
+          <label class="slider-controls-item slider-controls-item--3" for="slide-3">Третий слайд</label>
+        </div>
+
         <ul class="slider-list">
 
-          <li class="slider-item slider-item-1 slider-item-current" aria-label="Первый слайд">
+          <li class="slider-item" aria-label="Первый слайд">
 
             <span class="slider-number">01</span>
             <div class="image-wrapper">
@@ -210,18 +219,6 @@
 
           </li>
 
-        </ul>
-
-        <ul class="slider-switch-list">
-          <li>
-            <button class="slide-button current-slide" type="button">Первый слайд</button>
-          </li>
-          <li>
-            <button class="slide-button" type="button">Второй слайд</button>
-          </li>
-          <li>
-            <button class="slide-button" type="button">Третий слайд</button>
-          </li>
         </ul>
 
       </section>
