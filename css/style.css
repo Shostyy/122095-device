@@ -669,8 +669,8 @@ a.user-exit {
 }
 
 .slider-item-feature tbody {
-    display: flex;
-    flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .slider-item-feature th {
@@ -713,7 +713,6 @@ a.user-exit {
 .products-list {
   display: flex;
   justify-content: space-between;
-
   margin: 0;
   padding: 0;
   
@@ -831,7 +830,6 @@ a.user-exit {
 
 .services-button {
   box-sizing: content-box;
-
   width: 160px;
   padding: 8px 0;
   margin-bottom: 25px;
@@ -1620,9 +1618,9 @@ a.footer-user-exit {
 .filter {
   position: relative;
 
+  box-sizing: border-box;
   width: 328px;
   padding-left: 60px;
-  box-sizing: border-box;
 }
 
 .filter::before {
@@ -1643,7 +1641,7 @@ a.footer-user-exit {
   position: relative;
 
   box-sizing: border-box;
-  height: 70px; /* Временная высота */
+  height: 70px;
   margin: 0;
   padding: 0;
   padding-top: 22px;
@@ -1791,7 +1789,7 @@ a.footer-user-exit {
   position: absolute;
   top: -2px;
   left: 0;
-
+  
   width: 23px;
   height: 23px;
 
@@ -1908,7 +1906,6 @@ a.footer-user-exit {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 760px;
   height: 70px;
   margin-bottom: 69px;
@@ -2192,7 +2189,6 @@ a.footer-user-exit {
 .pagination-list {
   display: flex;
   justify-content: space-between;
-
   height: 70px;
   margin: 0;
   margin-bottom: 77px;
@@ -2205,7 +2201,6 @@ a.footer-user-exit {
 
 .page-number-list {
   display: flex;
-
   margin: 0;
   padding: 0;
 
@@ -2272,5 +2267,3 @@ a.footer-user-exit {
 .page-number-current a:active  {
   color: rgba(0, 0, 0, 1);
 }
-
-
