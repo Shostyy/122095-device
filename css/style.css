@@ -178,8 +178,23 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
 }
 
+.search-form::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 3px;
+
+  width: 16px;
+  height: 16px;
+
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
+}
+
 .search-form input {
   flex-grow: 1;
+  padding-left: 40px;
+
   background-color: transparent;
   border: none;
 }
