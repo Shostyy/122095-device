@@ -1845,8 +1845,11 @@ a.footer-user-exit {
   position: relative;
 
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 
   width: 760px;
+  height: 70px;
   margin-bottom: 69px;
   padding-left: 72px;
 }
@@ -1866,9 +1869,11 @@ a.footer-user-exit {
 }
 
 .sort h2 {
-  height: 70px; /* Временная высота */
+  box-sizing: border-box;
   margin: 0;
+  margin-right: 55px;
   padding: 0;
+  padding-top: 2px;
 
   font-size: 16px;
   line-height: 24px;
@@ -1877,10 +1882,22 @@ a.footer-user-exit {
 }
 
 .sort-keywords-list {
+  display: flex;
+  align-items: center;
+  width: 300px;
   margin: 0;
+  margin-right: auto;
   padding: 0;
 
   list-style: none;
+}
+
+.sort-keywords-item {
+  margin-right: 30px;
+}
+
+.sort-keywords-item:last-of-type {
+  margin-right: 0;
 }
 
 .sort-keywords-item a {
@@ -1906,10 +1923,50 @@ a.footer-user-exit {
 }
 
 .sort-direction-list {
+  position: relative;
+
+  width: 60px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.sort-direction-list a::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+
+  width: 11px;
+  height: 10px;
+
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.sort-direction-current a::before {
+  opacity: 1;
+}
+
+.sort-direction-list a:hover::before,
+.sort-direction-list a:focus::before {
+  opacity: 0.4;
+}
+
+.sort-direction-list a:active::before {
+  opacity: 1;
+}
+
+.sort-asc a::before {
+  right: 30px;
+
+  background-image: url("../img/icon-up-dir.svg");
+}
+
+.sort-desc a::before {
+  right: 0;
+
+  background-image: url("../img/icon-down-dir.svg");
 }
 
 
