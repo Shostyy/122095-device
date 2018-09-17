@@ -1983,9 +1983,7 @@ a.footer-user-exit {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
-
   margin: 0;
-  margin-bottom: 38px;
   padding: 0;
 
   list-style: none;
@@ -2105,8 +2103,10 @@ a.footer-user-exit {
   top: 20px;
   right: 25px;
 
-  padding: 18px 10px;
+  padding: 14px 10px;
 
+  font-size: 14px;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
   
   border: 2px solid #000000;
@@ -2122,6 +2122,7 @@ a.footer-user-exit {
   display: flex;
   justify-content: space-between;
 
+  height: 70px;
   margin: 0;
   margin-bottom: 77px;
   margin-left: 72px;
@@ -2147,29 +2148,38 @@ a.footer-user-exit {
   letter-spacing: 3.2px;
 }
 
-.prev-page-button a,
-.next-page-button a {
+.pagination-list > a {
+  padding-top: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.prev-page-button,
+.next-page-button {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 1);
 
   background-color: #ebebeb; 
 }
 
-.prev-page-button a:hover,
-.prev-page-button a:focus,
-.next-page-button a:hover,
-.next-page-button a:focus {
+.prev-page-button:hover,
+.prev-page-button:focus,
+.next-page-button:hover,
+.next-page-button:focus {
   background-color: #d9d9d9; 
 }
 
-.prev-page-button a:active,
-.next-page-button a:active {
+.prev-page-button:active,
+.next-page-button:active {
   color: rgba(0, 0, 0, 0.3);
 
   background-color: #ebebeb; 
 }
 
 .page-number-button a {
+  display: block;
+  padding: 23px 16px;
+
   color: rgba(0, 0, 0, 0.3);
 }
 
