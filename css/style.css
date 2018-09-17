@@ -147,6 +147,7 @@ input[type="radio"].visually-hidden {
 
 .site-logo-link {
   display: block;
+  width: 164px;
   margin-bottom: 18px;
 }
 
@@ -1751,6 +1752,10 @@ a.footer-user-exit {
   background-repeat: no-repeat;
 }
 
+.filter-color input:checked ~ label::before {
+  display: none;
+}
+
 .filter-color input:checked ~ label::after {
   display: block;
 }
@@ -1797,6 +1802,31 @@ a.footer-user-exit {
 .filter-form input[type="checkbox"]:disabled + label,
 .filter-form input[type="radio"]:disabled + label {
   color: #a6a6a6;
+}
+
+.filter-form input[type="checkbox"] + label:hover::before,
+.filter-form input[type="checkbox"]:focus + label::before,
+.filter-form input[type="checkbox"] + label:hover::after,
+.filter-form input[type="checkbox"]:focus + label::after,
+.filter-form input[type="radio"] + label:hover::before,
+.filter-form input[type="radio"]:focus + label::before,
+.filter-form input[type="radio"] + label:hover::after,
+.filter-form input[type="radio"]:focus + label::after {
+  opacity: 0.6;
+}
+
+.filter-form input[type="checkbox"]:active + label::before,
+.filter-form input[type="checkbox"]:active + label::after,
+.filter-form input[type="radio"]:active + label::before,
+.filter-form input[type="radio"]:active + label::after {
+  opacity: 1;
+}
+
+.filter-form input[type="checkbox"]:disabled + label::before,
+.filter-form input[type="checkbox"]:disabled + label::after,
+.filter-form input[type="radio"]:disabled + label::before,
+.filter-form input[type="radio"]:disabled + label::after {
+  opacity: 0.25;
 }
 
 .filter-form .button {
