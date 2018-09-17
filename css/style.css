@@ -1985,6 +1985,7 @@ a.footer-user-exit {
   flex-wrap: wrap;
 
   margin: 0;
+  margin-bottom: 38px;
   padding: 0;
 
   list-style: none;
@@ -1995,15 +1996,21 @@ a.footer-user-exit {
 
   display: flex;
   flex-direction: column;
-
   margin-right: 40px;
+  margin-bottom: 45px;
 }
 
 .catalog-item:nth-child(2n) {
   margin-right: 0;
 }
 
+.product-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-name {
+  width: 260px;
   margin: 0;
   padding: 0;
 }
@@ -2015,32 +2022,27 @@ a.footer-user-exit {
   color: #000000;
 }
 
+.product-cost {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Gilroy", Arial, sans-serif;
+  text-align: right;
+  color: #464646;
+}
+
 .catalog-image-wrapper {
   order: -1;
 
   width: 360px;
   height: 380px;
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
-}
-
-.catalog-image-wrapper:hover img {
-  opacity: 0.7;
-}
-
-.product-new::after {
-  content: "New";
-  position: absolute; 
-  top: 20px;
-  right: 25px;
-
-  padding: 18px 10px;
-
-  text-transform: uppercase;
-  
-  border: 2px solid #000000;
-  border-radius: 50%;
-  opacity: 0.2;
 }
 
 .popup-buttons {
@@ -2093,15 +2095,23 @@ a.footer-user-exit {
   color: rgba(0, 0, 0, 0.2);
 }
 
-.product-cost {
-  margin: 0;
-  padding: 0;
+.catalog-image-wrapper:hover img {
+  opacity: 0.7;
+}
 
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: "Gilroy", Arial, sans-serif;
-  color: #464646;
+.product-new::after {
+  content: "New";
+  position: absolute; 
+  top: 20px;
+  right: 25px;
+
+  padding: 18px 10px;
+
+  text-transform: uppercase;
+  
+  border: 2px solid #000000;
+  border-radius: 50%;
+  opacity: 0.2;
 }
 
 
