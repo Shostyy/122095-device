@@ -2015,36 +2015,60 @@ a.footer-user-exit {
   color: #000000;
 }
 
-.catalog-item .catalog-image-wrapper {
+.catalog-image-wrapper {
   order: -1;
 
+  width: 360px;
+  height: 380px;
   margin: 0;
   padding: 0;
 }
 
-.product-image:hover {
+.catalog-image-wrapper:hover img {
   opacity: 0.7;
 }
 
-.product-new {
-  position: absolute; /* Временые значения */
-  top: 45px;
-  right: 30px;
+.product-new::after {
+  content: "New";
+  position: absolute; 
+  top: 20px;
+  right: 25px;
+
+  padding: 18px 10px;
 
   text-transform: uppercase;
   
-  border: 2px solid;
+  border: 2px solid #000000;
+  border-radius: 50%;
   opacity: 0.2;
 }
 
 .popup-buttons {
-  position: absolute; /* Временые значения */
-  top: 40%;
-  left: 20%;
+  position: absolute; 
+  z-index: 1;
+
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 380px;
 }
 
-.popup-buttons-list {
-  list-style: none;
+.catalog-image-wrapper:hover .popup-buttons {
+  display: flex;
+}
+
+.popup-buttons:hover {
+  display: flex;
+}
+
+.popup-buttons button {
+  cursor: pointer;
+}
+
+.popup-buttons .button {
+  width: 200px;
 }
 
 .button-compare {
