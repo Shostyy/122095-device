@@ -257,6 +257,8 @@ input:focus ~ .search-button {
 }
 
 .search-button:active {
+  display: block;
+
   color: rgba(255, 255, 255, 0.3);
 }
 
