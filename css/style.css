@@ -464,8 +464,8 @@ a.user-exit {
 
   display: none;
   width: 1100px;
-  min-height: 129px;
-  padding-top: 33px;
+  min-height: 142px;
+  padding-top: 21px;
   padding-left: 60px;
 
   background-color: #f7e296;
@@ -507,6 +507,11 @@ a.user-exit {
   position: relative;
 
   margin-bottom: 108px;
+
+  background-image: linear-gradient(
+    #f7e296 113px,
+    transparent 113px
+  );
 }
 
 .slider-controls {
@@ -581,10 +586,6 @@ a.user-exit {
   padding: 0;
   height: 486px;
 
-  background-image: linear-gradient(
-    #f7e296 112px,
-    transparent 112px
-  );
   list-style: none;
 }
 
@@ -2008,6 +2009,8 @@ a.footer-user-exit {
 .sort-direction-list {
   position: relative;
 
+  display: flex;
+  justify-content: flex-end;
   width: 60px;
   margin: 0;
   padding: 0;
@@ -2015,10 +2018,24 @@ a.footer-user-exit {
   list-style: none;
 }
 
+.sort-direction-list li {
+  margin-right: 19px;
+}
+
+.sort-direction-list li:last-of-type {
+  margin-right: 0;
+}
+
+.sort-direction-list a {
+  display: block;
+  width: 11px;
+  height: 70px;
+}
+
 .sort-direction-list a::before {
   content: "";
   position: absolute;
-  top: -5px;
+  top: 31px;
 
   width: 11px;
   height: 10px;
@@ -2106,6 +2123,10 @@ a.footer-user-exit {
   padding: 0;
 }
 
+.product-name-short {
+  width: 220px;
+}
+
 .product-name a {
   font-weight: 800;
   font-size: 18px;
@@ -2138,15 +2159,12 @@ a.footer-user-exit {
 
 .popup-buttons {
   position: absolute; 
+  top: 173px;
+  left: 81px;
   z-index: 1;
 
   display: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 360px;
-  height: 380px;
-  padding-top: 18px;
 }
 
 .catalog-image-wrapper:hover .popup-buttons {
@@ -2163,7 +2181,8 @@ a.footer-user-exit {
 
 .popup-buttons .button {
   width: 200px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  padding-left: 0;
 }
 
 .button-compare {
@@ -2210,11 +2229,11 @@ a.footer-user-exit {
 .product-new::after {
   content: "";
   position: absolute; 
-  top: 28px;
-  right: 25px;
+  top: 29px;
+  right: 26px;
 
-  width: 60px;
-  height: 60px;
+  width: 58px;
+  height: 56px;
 
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 50%;
