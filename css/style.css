@@ -632,7 +632,7 @@ a.user-exit {
 
 .slider-item:nth-child(2) img {
   top: 14px;
-  left: 90px;
+  left: 116px;
 }
 
 .slider-item:nth-child(3) img {
@@ -930,8 +930,6 @@ a.user-exit {
 .services-slide::after {
   content: "";
   position: absolute;
-  top: -25px;
-  right: -324px;
 
   width: 260px;
   height: 230px;
@@ -940,18 +938,27 @@ a.user-exit {
 }
 
 .services-delivery::after {
+  top: -20px;
+  right: -320px;
+
   background-image: url("../img/delivery.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .services-warranty::after {
+  top: -29px;
+  right: -322px;
+
   background-image: url("../img/warranty.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .services-credit::after {
+  top: -32px;
+  right: -306px;
+
   background-image: url("../img/credit.svg");
   background-repeat: no-repeat;
   background-position: center;
