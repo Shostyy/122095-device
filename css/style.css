@@ -151,7 +151,7 @@ input[type="radio"].visually-hidden {
 .site-logo-link {
   display: block;
   width: 164px;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .site-logo:hover,
@@ -165,7 +165,7 @@ input[type="radio"].visually-hidden {
 
 .main-navigation .wrapper {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
 }
 
 .search-form {
@@ -184,7 +184,7 @@ input[type="radio"].visually-hidden {
 .search-form::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 17px;
   left: 3px;
 
   width: 16px;
@@ -197,8 +197,7 @@ input[type="radio"].visually-hidden {
 .search-form input {
   flex-grow: 1;
   padding: 0;
-  padding-bottom: 16px;
-  padding-left: 40px;
+  padding-left: 38px;
 
   background-color: transparent;
   border: none;
@@ -291,6 +290,7 @@ input:focus ~ .search-button {
   box-sizing: border-box;
   width: 260px;
   margin: 0;
+  margin-top: 9px;
   padding: 0;
   padding-left: 26px;
 }
@@ -326,6 +326,7 @@ input:focus ~ .search-button {
   box-sizing: border-box;
   width: 240px;
   margin: 0;
+  margin-top: 9px;
   padding: 0;
   padding-left: 27px;
 }
