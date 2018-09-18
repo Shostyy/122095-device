@@ -1334,7 +1334,8 @@ a.footer-user-exit {
   margin-bottom: 63px;
 }
 
-.footer-middle-wrapper p {
+.footer-middle-wrapper > p,
+.footer-middle-wrapper > a {
   width: 260px;
   margin: 0;
 
@@ -1343,6 +1344,7 @@ a.footer-user-exit {
   line-height: 30px;
   font-family: "Open Sans", Arial, sans-serif;
   letter-spacing: normal;
+  color: inherit;
 }
 
 .footer-phone {
