@@ -701,11 +701,6 @@ a.user-exit {
   border-spacing: 0;
 }
 
-.slider-item-feature tbody {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
 .slider-item-feature tr {
   margin-bottom: 7px;
 
@@ -739,7 +734,7 @@ a.user-exit {
   letter-spacing: 0.4px;
 }
 
-.slider-item-feature td:nth-of-type(2) {
+.slider-item-feature td:nth-of-type(2)  {
   width: 139px;
 }
 
@@ -1405,6 +1400,10 @@ a.footer-user-exit {
   color: rgba(255, 255, 255, 0.3);  
 }
 
+.main-footer .footer-bottom-wrapper {
+  justify-content: flex-end;
+}
+
 .footer-bottom-wrapper::before {
   content: "";
   position: absolute;
@@ -1428,7 +1427,7 @@ a.footer-user-exit {
   flex-wrap: wrap;
 
   width: 300px;
-  margin-left: 442px;
+  margin-right: 391px;
 }
 
 .footer-socials .social-button {
@@ -1765,7 +1764,7 @@ a.footer-user-exit {
 .filter {
   position: relative;
 
-  width: 328px;
+  width: 268px;
   padding-left: 60px;
 }
 
@@ -1784,6 +1783,7 @@ a.footer-user-exit {
 }
 
 .main-content-wrapper h2 {
+  /* width: 268px; */
   margin: 0;
   padding: 0;
   padding-top: 2px;
@@ -2211,6 +2211,7 @@ a.footer-user-exit {
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  width: 760px;
   margin: 0;
   padding: 0;
 
@@ -2372,6 +2373,7 @@ a.footer-user-exit {
 .pagination-list {
   display: flex;
   justify-content: space-between;
+  width: 760px;
   height: 70px;
   margin: 0;
   margin-bottom: 77px;
