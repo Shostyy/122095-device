@@ -704,6 +704,7 @@ a.user-exit {
   line-height: 20px;
   font-family: "Open Sans", Arial, sans-serif;
   letter-spacing: 0.1px;
+  text-align: left;
   color: #464646;
 }
 
@@ -1661,6 +1662,7 @@ a.footer-user-exit {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   width: 500px;
   margin: 0;
   margin-bottom: 45px;
