@@ -489,17 +489,21 @@
 
     <form class="feedback-form" method="POST" action="https://echo.htmlacademy.ru">
 
-      <p class="feadback-item">
-        <label for="name-field">Ваше имя:</label>
-        <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
-      </p>
+      <div class="wrapper">
 
-      <p class="feadback-item">
-        <label for="email-field">Ваш e-mail:</label>
-        <input type="email" name="email" id="email-field" placeholder="email@example.com">
-      </p>
+        <p class="feedback-half-width">
+          <label for="name-field">Ваше имя:</label>
+          <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
+        </p>
 
-      <p class="feadback-item">
+        <p class="feedback-half-width">
+          <label for="email-field">Ваш e-mail:</label>
+          <input type="email" name="email" id="email-field" placeholder="email@example.com">
+        </p>
+
+      </div>
+
+      <p>
         <label for="letter-field">Текст письма:</label>
         <textarea name="letter" id="letter-field" placeholder="В свободной форме"></textarea>
       </p>
