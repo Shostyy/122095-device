@@ -691,6 +691,10 @@ a.user-exit {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
+.slider-description-short {
+  width: 460px;
+}
+
 .slider .button {
   display: block;
   width: 220px;
