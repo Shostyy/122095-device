@@ -1166,6 +1166,8 @@ a.user-exit {
 
 .contacts-img-link {
   display: block;
+  width: 560px;
+  height: 222px;
   margin-bottom: 63px;
 
   background-color: #e9e9e9;
