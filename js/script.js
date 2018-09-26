@@ -1,4 +1,65 @@
-// Form
+// servicesSlider
+
+var servicesButton = document.querySelectorAll(".services-button");
+var deliveryButton = document.querySelector(".delivery-button");
+var warrantyButton = document.querySelector(".warranty-button");
+var creditButton = document.querySelector(".credit-button");
+
+var servicesSlide = document.querySelectorAll(".services-slide");
+var deliverySlide = document.querySelector(".delivery-slide");
+var warrantySlide = document.querySelector(".warranty-slide");
+var creditSlide = document.querySelector(".credit-slide");
+
+deliveryButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    // sliderButton switch
+    for (let i = 0; i < servicesButton.length; i++) {
+        servicesButton[i].classList.remove("services-button-active");
+    }
+    deliveryButton.classList.add("services-button-active");
+
+    // slide switch
+    for (let i = 0; i < servicesSlide.length; i++) {
+        servicesSlide[i].classList.remove("services-slide-active");
+    }
+    deliverySlide.classList.add("services-slide-active");
+});
+
+warrantyButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    // sliderButton switch
+    for (let i = 0; i < servicesButton.length; i++) {
+        servicesButton[i].classList.remove("services-button-active");
+    }
+    warrantyButton.classList.add("services-button-active");
+
+    // slide switch
+    for (let i = 0; i < servicesSlide.length; i++) {
+        servicesSlide[i].classList.remove("services-slide-active");
+    }
+    warrantySlide.classList.add("services-slide-active");
+});
+
+creditButton.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    // sliderButton switch
+    for (let i = 0; i < servicesButton.length; i++) {
+        servicesButton[i].classList.remove("services-button-active");
+    }
+    creditButton.classList.add("services-button-active");
+
+    // slide switch
+    for (let i = 0; i < servicesSlide.length; i++) {
+        servicesSlide[i].classList.remove("services-slide-active");
+    }
+    creditSlide.classList.add("services-slide-active");
+});
+
+
+// form
 
 var writeUs = document.querySelector(".write-us-button");
 
@@ -69,7 +130,7 @@ window.addEventListener("keydown", function (evt) {
 });
 
 
-// Map
+// map
 
 var mapLink = document.querySelector(".contacts-img-link");
 

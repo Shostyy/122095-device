@@ -1017,7 +1017,7 @@ a.user-exit {
   background-repeat: no-repeat;
 }
 
-.services-delivery::after {
+.delivery-slide::after {
   top: -20px;
   right: -320px;
 
@@ -1026,7 +1026,7 @@ a.user-exit {
   background-position: center;
 }
 
-.services-warranty::after {
+.warranty-slide::after {
   top: -29px;
   right: -322px;
 
@@ -1035,7 +1035,7 @@ a.user-exit {
   background-position: center;
 }
 
-.services-credit::after {
+.credit-slide::after {
   top: -32px;
   right: -306px;
 
